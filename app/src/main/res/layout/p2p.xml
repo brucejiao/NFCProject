@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_p2p_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/p2p_activity_ip" />
+
+    <EditText
+        android:id="@+id/et_p2p_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_p2p_ip"
+        android:layout_alignBottom="@+id/tv_p2p_ip"
+        android:layout_alignParentRight="true"
+        android:text="172.23.1.120"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_p2p_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_p2p_port"
+        android:layout_alignBottom="@+id/tv_p2p_port"
+        android:layout_alignLeft="@+id/et_p2p_ip"
+        android:layout_alignParentRight="true"
+        android:text="8800"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_p2p_psswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_p2p_psswd"
+        android:layout_alignBottom="@+id/tv_p2p_psswd"
+        android:layout_alignLeft="@+id/et_p2p_port"
+        android:layout_alignParentRight="true"
+        android:text="YXQ3Mahe-5H-R1Z_"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_p2p_dev_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_p2p_dev_port"
+        android:layout_alignBottom="@+id/tv_p2p_dev_port"
+        android:layout_alignParentRight="true"
+        android:text="37777"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tv_p2p_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_p2p_ip"
+        android:layout_marginTop="38dp"
+        android:text="@string/p2p_activity_port" />
+
+    <TextView
+        android:id="@+id/tv_p2p_psswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_p2p_port"
+        android:layout_marginTop="41dp"
+        android:text="@string/p2p_activity_password" />
+
+    <TextView
+        android:id="@+id/tv_p2p_dev_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_p2p_dev_ip"
+        android:layout_marginTop="40dp"
+        android:text="@string/p2p_activity_dev_port" />
+
+    <EditText
+        android:id="@+id/et_p2p_dev_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_p2p_dev_ip"
+        android:layout_alignBottom="@+id/tv_p2p_dev_ip"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:text="PZC4FA492W00413" />
+
+    <TextView
+        android:id="@+id/tv_p2p_dev_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_p2p_psswd"
+        android:layout_marginTop="33dp"
+        android:text="@string/p2p_activity_dev_id" />
+
+    <Button
+        android:id="@+id/bt_p2p_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_p2p_autologin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="@string/p2p_activity_config" />
+
+    <CheckBox
+        android:id="@+id/cb_p2p_autologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_p2p_dev_port"
+        android:layout_below="@+id/et_p2p_dev_port"
+        android:layout_marginTop="25dp"
+        android:text="@string/p2p_activity_autologin" />
+
+</RelativeLayout>

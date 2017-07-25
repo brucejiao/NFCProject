@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nfcproject.page.LKStateShowActivity">
+
+   <LinearLayout
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:layout_below="@+id/img_nfc"
+       android:background="@color/xs_blue"
+       android:orientation="horizontal"
+       android:visibility="visible">
+
+      <LinearLayout
+          android:id="@+id/back"
+          android:layout_width="50dp"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="15dp"
+          android:gravity="center|left"
+          android:orientation="horizontal">
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@mipmap/arrow_top_left"
+             android:textColor="#fff" />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/title"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginRight="65dp"
+          android:gravity="center"
+          android:text="粮情展示"
+          android:textColor="#fff"
+          android:textSize="20dp" />
+   </LinearLayout>
+
+ <!--  <LinearLayout
+       android:id="@+id/lxmain_search_layout"
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:layout_marginLeft="3dp"
+       android:layout_marginRight="3dp"
+       android:layout_marginTop="5dp"
+       android:orientation="horizontal"
+       android:background="@drawable/editsharp">
+      <EditText
+          android:id="@+id/search_key"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:background="@null"
+          android:gravity="center|left"
+          android:layout_marginLeft="15dp"
+          android:hint="请输入仓房号"
+          android:imeOptions="actionDone"
+          android:singleLine="true"
+          android:textColorHint="#5C5C5C"
+          android:textSize="11dp" />
+
+      <ImageView
+          android:id="@+id/search_submit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginLeft="95dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:layout_toRightOf="@id/search_key"
+          android:background="@mipmap/search"
+          android:gravity="center" />
+
+   </LinearLayout>-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       android:orientation="horizontal">
+
+      <LinearLayout
+          android:id="@+id/lxmain_search_layout"
+          android:layout_width="300dp"
+          android:layout_height="35dp"
+          android:layout_marginLeft="3dp"
+          android:layout_marginRight="3dp"
+          android:layout_marginTop="5dp"
+          android:background="@drawable/editsharp"
+          android:orientation="horizontal">
+         <!--    <EditText
+             android:id="@+id/search_key"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:background="@null"
+             android:drawableLeft="@mipmap/search"
+             android:hint="请输入查询的关键字"
+             android:gravity="center"
+             android:layout_marginTop="5dp"
+             android:imeOptions="actionDone"
+             android:singleLine="true"
+             android:textColorHint="#5C5C5C"
+             android:textSize="11dp"
+             />
+         <Button
+             android:id="@+id/search_submit"
+             android:layout_width="120dp"
+             android:layout_height="45dp"
+             android:layout_toRightOf="@id/search_key"
+             android:layout_marginTop="0dp"
+             android:layout_alignParentRight="true"
+             android:layout_marginLeft="45dp"
+             android:layout_marginRight="15dp"
+             android:background="@color/xs_short_gary"
+             android:gravity="center"
+             android:textSize="11sp"
+             android:text="查询"/>-->
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="0dp"
+             android:layout_marginTop="5dp"
+             android:background="@mipmap/search"
+             android:gravity="center" />
+
+         <EditText
+             android:id="@+id/search_key"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="5dp"
+             android:layout_weight="1"
+             android:background="@null"
+             android:gravity="center|left"
+             android:hint="请输入仓房号"
+             android:imeOptions="actionDone"
+             android:singleLine="true"
+             android:textColorHint="#5C5C5C"
+             android:textSize="11dp" />
+
+
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/search_submit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="15dp"
+          android:background="@null"
+          android:gravity="center"
+          android:text="查询"
+          android:textSize="11sp" />
+   </LinearLayout>
+   <WebView
+       android:id="@+id/lq_state_show"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </WebView>
+</LinearLayout>

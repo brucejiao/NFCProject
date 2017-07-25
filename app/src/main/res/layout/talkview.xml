@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TalkActivity" >
+
+	<TextView  
+		android:id="@+id/txtCodeType"
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+    	android:text="@string/CodeType"/>
+	
+	<Spinner
+	   android:id="@+id/spCodeType"
+	   android:layout_width="fill_parent"
+	   android:layout_height="50dp"
+	   android:layout_marginLeft="85dp"
+	   android:layout_marginTop="10dp"
+	   android:ems="10" />
+
+	<Button
+	    android:id="@+id/btStopTalk"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/btStartTalk"
+	    android:layout_alignRight="@+id/spCodeType"
+	    android:text="@string/StopTalk" />
+
+	<Button
+	    android:id="@+id/btStartTalk"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/txtCodeType"
+	    android:layout_below="@+id/spCodeType"
+	    android:layout_marginTop="123dp"
+	    android:text="@string/StartTalk" />
+
+	<CheckBox
+	    android:id="@+id/cbSpeakOnly"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/btStartTalk"
+	    android:layout_below="@+id/spCodeType"
+	    android:layout_marginTop="28dp"
+	    android:text="@string/SpeakOnly" />
+	
+		<CheckBox
+	    android:id="@+id/cbEnableWait"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/cbSpeakOnly"
+	    android:layout_toRightOf="@+id/cbSpeakOnly"
+	    android:text="@string/EnableWait" />
+	
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/sp_intelbrass_bypass_local_chn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tv_intelbrass_bypass_local_chn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/intelbrass_bypass_local_chn" />
+
+    <Spinner
+        android:id="@+id/sp_intelbrass_bypass_extend_chn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_intelbrass_bypass_local_chn" />
+
+    <TextView
+        android:id="@+id/tv_intelbrass_bypass_extend_chn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/sp_intelbrass_bypass_extend_chn"
+        android:layout_marginTop="14dp"
+        android:text="@string/intelbrass_bypass_ext_chn" />
+
+    <TextView
+        android:id="@+id/tv_intelbrass_bypass_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_intelbrass_bypass_psw"
+        android:layout_alignBottom="@+id/et_intelbrass_bypass_psw"
+        android:layout_alignParentLeft="true"
+        android:text="@string/intelbrass_bypass_psw" />
+
+    <Spinner
+        android:id="@+id/sp_intelbrass_bypass_mode"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_intelbrass_bypass_extend_chn" />
+
+    <TextView
+        android:id="@+id/tv_intelbrass_bypass_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/sp_intelbrass_bypass_mode"
+        android:layout_marginTop="14dp"
+        android:text="@string/intelbrass_bypass_mode" />
+
+    <EditText
+        android:id="@+id/et_intelbrass_bypass_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_intelbrass_bypass_mode"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_intelbrass_bypass_mode"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_intelbrass_bypass_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_intelbrass_bypass_psw"
+        android:layout_below="@+id/et_intelbrass_bypass_psw"
+        android:layout_marginTop="34dp"
+        android:text="@string/set_config" />
+
+</RelativeLayout>

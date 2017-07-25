@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ListView
+        android:id="@+id/view_ListWindow"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" />
+    <TextView  
+		android:id="@+id/endtime_text"
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="350dp"
+    	android:text="@string/end_time"
+    />
+    <TextView  
+		android:id="@+id/endtime_value"
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="350dp"
+    	android:text="2014-2-18"
+    />
+    <Button 
+        android:text="@string/time_setting" 
+        style="?android:attr/buttonStyleSmall"
+		android:id="@+id/set_end_time_btn" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_marginLeft="175dp"
+      	android:layout_marginTop="340dp"
+	/>
+
+    <TextView
+        android:id="@+id/begintime_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/endtime_text"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view_ListWindow"
+        android:layout_marginTop="29dp"
+        android:text="@string/begin_time" />
+
+    <TextView
+        android:id="@+id/begintime_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/begintime_text"
+        android:layout_alignBottom="@+id/begintime_text"
+        android:layout_alignLeft="@+id/endtime_value"
+        android:layout_alignParentRight="true"
+        android:text="2014-2-18" />
+
+    <Button
+        android:id="@+id/set_begin_time_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/begintime_text"
+        android:layout_alignBottom="@+id/begintime_text"
+        android:layout_alignLeft="@+id/set_end_time_btn"
+        android:text="@string/time_setting" />
+
+    <TextView
+        android:id="@+id/tv_end_time_HMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/endtime_value"
+        android:layout_below="@+id/set_end_time_btn"
+        android:layout_marginTop="16dp"
+        android:text="23:59:59" />
+
+    <TextView
+        android:id="@+id/tv_begin_time_HMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/begintime_value"
+        android:layout_below="@+id/set_begin_time_btn"
+        android:layout_marginTop="31dp"
+        android:text="00:00:00" />
+
+    <Button
+        android:id="@+id/bt_begin_time_HMS"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_begin_time_HMS"
+        android:layout_alignBottom="@+id/tv_begin_time_HMS"
+        android:layout_alignLeft="@+id/set_begin_time_btn"
+        android:text="@string/time_setting" />
+
+    <Button
+        android:id="@+id/bt_end_time_HMS"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_end_time_HMS"
+        android:layout_alignBottom="@+id/tv_end_time_HMS"
+        android:layout_alignLeft="@+id/set_end_time_btn"
+        android:text="@string/time_setting" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view_ListWindow"
+        android:layout_below="@+id/tv_begin_time_HMS"
+        android:text="@string/search_activity_search" />
+
+</RelativeLayout>

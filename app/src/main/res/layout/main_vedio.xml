@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<EditText
+	    android:id="@+id/editText_server_password"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/Passwd"
+	    android:layout_alignBottom="@+id/Passwd"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="19dp"
+	    android:ems="10"
+	    android:text="admin"
+	    android:inputType="textPassword" />
+
+	<EditText
+	    android:id="@+id/editText_server_user"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/UserName"
+	    android:layout_alignBottom="@+id/UserName"
+	    android:layout_alignLeft="@+id/editText_server_password"
+	    android:ems="10"
+	    android:text="admin" />
+
+	<EditText
+	    android:id="@+id/editText_server_Port"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/server_port_text"
+	    android:layout_alignBottom="@+id/server_port_text"
+	    android:layout_alignLeft="@+id/editText_server_user"
+	    android:ems="10"
+	    android:text="37777" />
+
+	<TextView
+	    android:id="@+id/UserName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/editText_server_password"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="26dp"
+	    android:text="@string/login_activity_user" />
+
+	<TextView
+	    android:id="@+id/server_port_text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/editText_server_user"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="21dp"
+	    android:text="@string/login_activity_port" />
+
+	<TextView
+	    android:id="@+id/server_name_text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/editText_server_Port"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="18dp"
+	    android:text="@string/login_activity_ip" />
+
+	<EditText
+	    android:id="@+id/editText_server"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/server_name_text"
+	    android:layout_alignBottom="@+id/server_name_text"
+	    android:layout_alignLeft="@+id/editText_server_Port"
+	    android:ems="10"
+	    android:text="172.23.2.66" >
+
+	    <requestFocus />
+	</EditText>
+
+	<TextView
+	    android:id="@+id/Passwd"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/button1"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="95dp"
+	    android:text="@string/login_activity_password" />
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="83dp"
+	    android:text="@string/login_activity_login" />
+
+	<CheckBox
+	    android:id="@+id/cb_login_autologin"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/button1"
+	    android:layout_alignLeft="@+id/editText_server_password"
+	    android:layout_marginBottom="14dp"
+	    android:text="@string/login_activity_autologin" />
+
+</RelativeLayout>

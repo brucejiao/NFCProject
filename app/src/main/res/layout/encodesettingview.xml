@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_encode_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/encode_activity_mode" />
+
+    <Spinner
+        android:id="@+id/sp_encode_mode"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/tv_encode_resolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sp_encode_mode"
+        android:layout_marginTop="44dp"
+        android:text="@string/encode_activity_resolution" />
+
+    <Spinner
+        android:id="@+id/sp_encode_resolution"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_encode_mode"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_encode_mode"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/tv_encode_fps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sp_encode_resolution"
+        android:layout_marginTop="46dp"
+        android:text="@string/encode_activity_fps" />
+
+    <Spinner
+        android:id="@+id/sp_encode_fps"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_encode_resolution"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_encode_resolution"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/bt_encode_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_encode_bitrate"
+        android:layout_alignParentBottom="true"
+        android:text="@string/encode_activity_set" />
+
+    <TextView
+        android:id="@+id/tv_encode_bitrate_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sp_encode_fps"
+        android:layout_marginTop="23dp"
+        android:text="@string/encode_activity_bitrate_ref" />
+
+    <TextView
+        android:id="@+id/tv_encode_bitrate_scope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_encode_bitrate_ref"
+        android:layout_alignBottom="@+id/tv_encode_bitrate_ref"
+        android:layout_alignLeft="@+id/sp_encode_fps"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/sp_encode_bitrate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tv_encode_bitrate_scope"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_encode_bitrate_scope" />
+
+    <TextView
+        android:id="@+id/tv_encode_bitrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_encode_bitrate"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/encode_activity_bitrate" />
+
+</RelativeLayout>

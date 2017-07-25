@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<string-array name="remote_chn_bit_rate_type">
+        <item name="constant">CBR</item>
+        <item name="variable">VBR</item>
+    </string-array>
+    
+    <string-array name="remote_img_quality">
+        <item name="worst">Lowest</item>
+        <item name="worse">Lower</item>
+        <item name="bad">Low</item>
+        <item name="good">High</item>
+        <item name="better">Higher</item>
+        <item name="best">Highest</item>
+    </string-array>
+    
+    <string-array name="local_cfg_capture_mode">
+        <item name="1x">1x</item>
+        <item name="3x">3x</item>
+        <item name="5x">5x</item>
+    </string-array>
+    
+   <string-array name="local_cfg_push_time">
+        <item name="15S">15 S</item>
+        <item name="30S">30 S</item>
+        <item name="1M">1 Min</item>
+        <item name="2M">2 Min</item>
+        <item name="5M">5 Min</item>
+    </string-array>
+    
+   <string-array name="local_cfg_preplayback_time"><!-- new -->
+        <item name="5S">5 S</item>
+        <item name="10S">10 S</item>
+        <item name="15S">15 S</item>
+        <item name="20S">20 S</item>
+        <item name="25S">25 S</item>
+        <item name="30S">30 S</item>
+        <item name="35S">35 S</item>
+        <item name="40S">40 S</item>
+        <item name="45S">45 S</item>
+        <item name="50S">50 S</item>
+        <item name="55S">55 S</item>
+        <item name="60S">60 S</item>
+    </string-array>
+   
+    <string-array name="push_type">
+        <item name="VideoMotion">Motion Detect</item>
+        <item name="VideoBlind">Cam Masking</item>
+        <item name="AlarmLocal">Local Alarm</item>
+      	<item name="LiveCall">VTO</item>    <!--not deal -->
+        <item name="StorageNotExist">No Disk</item>
+        <item name="StorageLowSpace">Low Space</item>
+        <item name="StorageFailure">Disk Error</item>
+    </string-array>
+    
+    <string-array name="push_display_type">
+        <item name="video">Video</item>
+        <item name="image">Image</item>
+    </string-array>
+    
+    
+    <string-array name="hdd_report_disk_status">
+    	<item name="hibernation">Sleep</item>
+    	<item name="activity">Activity</item>
+    	<item name="error">Error</item>
+    </string-array>
+    
+    <string-array name="hdd_report_disk_location">
+        <item name="local">Local</item>
+        <item name="remote">Remote</item>
+    </string-array>
+    
+    <string-array name="week">
+			<item name="sun_week">Sunday</item>
+			<item name="mon_week">Monday</item>
+			<item name="tue_week">Tuesday</item>
+			<item name="wed_week">Wednesday</item>
+			<item name="thu_week">Thursday</item>
+			<item name="fri_week">Friday</item>
+			<item name="sat_week">Saturday</item>
+    </string-array>
+    
+    <string-array name="week_short">
+			<item name="sun">Sun</item>
+			<item name="mon">Mon</item>
+			<item name="tue">Tue</item>
+			<item name="wed">Wed</item>
+			<item name="thu">Thur</item>
+			<item name="fri">Fri</item>
+			<item name="sat">Sat</item>
+    </string-array>
+    
+    <string-array name="week_all">
+    	<item name="whole_all">Whole week</item>
+			<item name="sun_all">Sunday</item>
+			<item name="mon_all">Monday</item>
+			<item name="tue_all">Tuesday</item>
+			<item name="wed_all">Wednesday</item>
+			<item name="thu_all">Thursday</item>
+			<item name="fri_all">Friday</item>
+			<item name="sat_all">Saturday</item>
+    </string-array>
+
+	<string-array name="cloud_disk_type">
+    		<item name="drop_box">Dropbox</item>
+			<item name="kuai_pan">Kuaipan</item>
+			<item name="sky_drive">SkyDrive</item>
+    </string-array>
+   
+<!--以下国家的只需要在英文中翻译，把每个国家翻译成自己国家的语言-->
+ <string-array name="ddns_country">
+    	<item name="China">China</item>
+			<item name="US">US</item>
+			<item name="Spain">Spain</item>
+			<item name="UK">UK</item>
+			<item name="Russia">Russia</item>
+			<item name="Canada">Canada</item>
+			<item name="Afghanistan">Afghanistan</item>
+			<item name="Bangladesh">Bangladesh</item>
+			<item name="Bhutan ">Bhutan</item>
+			<item name="Burma">Burma</item>
+			<item name="Cambodia">Cambodia</item>
+			<item name="India">India</item>
+			<item name="Indonesia">Indonesia</item>
+			<item name="Japan">Japan</item>
+			<item name="Laos">Laos</item>
+			<item name="Malaysia">Malaysia</item>
+			<item name="Maldives">Maldives</item>
+			<item name="Mongolia">Mongolia</item>
+			<item name="Nepal">Nepal</item>
+			<item name="NorthKorea">NorthKorea</item>
+			<item name="Pakistan">Pakistan</item>
+			<item name="Philippines">Philippines</item>
+			<item name="Singapore">Singapore</item>
+			<item name="SouthKorea">SouthKorea</item>
+			<item name="SriLanka">SriLanka</item>
+			<item name="Thailand">Thailand</item>
+			<item name="Turkey">Turkey</item>
+			<item name="Vietnam">Vietnam</item>
+			<item name="Brunei">Brunei</item>
+			<item name="Palestine">Palestine</item>
+			<item name="Sikkim">Sikkim</item>
+			<item name="Albania">Albania</item>
+			<item name="Austria">Austria</item>
+			<item name="Belgium">Belgium</item>
+			<item name="Bulgaria">Bulgaria</item>
+			<item name="Croatia">Croatia</item>
+			<item name="Cyprus">Cyprus</item>
+			<item name="Denmark">Denmark</item>
+			<item name="Finland">Finland</item>
+			<item name="France">France</item>
+			<item name="Germany">Germany</item>
+			<item name="Greece">Greece</item>
+			<item name="Hungary">Hungary</item>
+			<item name="Iceland">Iceland</item>
+			<item name="Ireland">Ireland</item>
+			<item name="Italy">Italy</item>
+			<item name="Liechtenstein">Liechtenstein</item>
+			<item name="Luxembourg">Luxembourg</item>
+			<item name="Macedonia">Macedonia</item>
+			<item name="Malta">Malta</item>
+			<item name="Monaco">Monaco</item>
+			<item name="Netherlands">Nederland</item>
+			<item name="Norway">Norway</item>
+			<item name="Poland">Polska</item>
+			<item name="Portugal">Portugal</item>
+			<item name="Romania">Romania</item>
+			<item name="SanMarino">SanMarino</item>
+			<item name="Slovenia">Slovenia</item>
+			<item name="Sweden">Sweden</item>
+			<item name="Switzerland">Switzerland</item>
+			<item name="Yugoslavia">Yugoslavia</item>
+			<item name="Australien">Australien</item>
+			<item name="Fidschi">Fidschi</item>
+			<item name="Kiribati">Kiribati</item>
+			<item name="Nauru">Nauru</item>
+			<item name="Neuseeland">Neuseeland</item>
+			<item name="PapuaNeuguinea">Papua Neuguinea</item>
+			<item name="Salomonen">Salomonen</item>
+			<item name="Tonga">Tonga</item>
+			<item name="Vanuatu">Vanuatu</item>
+			<item name="Westsamoa">Westsamoa</item>
+			<item name="Anguilla">Anguilla</item>
+			<item name="Argentina">Argentina</item>
+			<item name="TheBahamas">TheBahamas</item>
+			<item name="Barbados">Barbados</item>
+			<item name="Belize">Belize</item>
+			<item name="Bermuda">Bermuda</item>
+			<item name="Bolivia">Bolivia</item>
+			<item name="Brazil">Brazil</item>
+			<item name="BritishVirginIslands">British Virgin Islands</item>
+			<item name="Canada">Canada</item>
+			<item name="Chile">Chile</item>
+			<item name="Colombia">Colombia</item>
+			<item name="CostaRica">CostaRica</item>
+			<item name="Cuba">Cuba</item>
+			<item name="DominicanRepublic">Dominican Republic</item>
+			<item name="Ecuador">Ecuador</item>
+			<item name="ElSalvador">El Salvador</item>
+			<item name="GreenlandNuuk">Greenland Nuuk</item>
+			<item name="Grenada">Grenada</item>
+			<item name="Guadeloupe">Guadeloupe</item>
+			<item name="Guatemala">Guatemala</item>
+			<item name="Guyana">Guyana</item>
+			<item name="Haiti">Haiti</item>
+			<item name="Honduras">Honduras</item>
+			<item name="Jamaica">Jamaica</item>
+			<item name="Martinique">Martinique</item>
+			<item name="Mexico">Mexico</item>
+			<item name="Montserrat">Montserrat</item>
+			<item name="Nicaragua">Nicaragua</item>
+			<item name="Panama">Panama</item>
+			<item name="Paraguay">Paraguay</item>
+			<item name="Peru">Peru</item>
+			<item name="PuertoRico">PuertoRico</item>
+			<item name="StLucia">StLucia</item>
+			<item name="StVincentandtheGrenadines">StVincentand the Grenadines</item>
+			<item name="Suriname">Suriname</item>
+			<item name="TrinidadandTobago">Trinidadand Tobago</item>
+			<item name="Uruguay">Uruguay</item>
+			<item name="Venezuela">Venezuela</item>
+			<item name="VirginIslands">Virgin Islands</item>
+			<item name="Algeria">Algeria</item>
+			<item name="Angola">Angola</item>
+			<item name="Benin">Benin</item>
+			<item name="Botswana">Botswana</item>
+			<item name="Burundi">Burundi</item>
+			<item name="Cameroon">Cameroon</item>
+			<item name="CentralAfricanRepublic">Central African Republic</item>
+			<item name="Chad">Chad</item>
+			<item name="CongoRep">CongoRep</item>
+			<item name="Djibouti">Djibouti</item>
+			<item name="Egypt">Egypt</item>
+			<item name="EquatorialGuinea">Equatorial Guinea</item>
+			<item name="Eritrea">Eritrea</item>
+			<item name="Ethiopia">Ethiopia</item>
+			<item name="Gabon">Gabon</item>
+			<item name="TheGambia">TheGambia</item>
+			<item name="Ghana">Ghana</item>
+			<item name="Guinea">Guinea</item>
+			<item name="GuineaBissau">GuineaBissau</item>
+			<item name="Kenya">Kenya</item>
+			<item name="Lesotho">Lesotho</item>
+			<item name="Liberia">Liberia</item>
+			<item name="Libya">Libya</item>
+			<item name="Madagasca">Madagasca</item>
+			<item name="Malawi">Malawi</item>
+			<item name="Mali">Mali</item>
+			<item name="Mauritius">Mauritius</item>
+			<item name="Mauritania">Mauritania</item>
+			<item name="Morocco">Morocco</item>
+			<item name="Mozambique">Mozambique</item>
+			<item name="Namibia">Namibia</item>
+			<item name="Niger">Niger</item>
+			<item name="Nigeria">Nigeria</item>
+			<item name="Reunion">Reunion</item>
+			<item name="RepublicoftheCongo">Republic of the Congo</item>
+			<item name="Rwanda">Rwanda</item>
+			<item name="SaoTomeandPrincipe">Sao Tomeand Principe</item>
+			<item name="Senegal">Senegal</item>
+			<item name="Seychelles">Seychelles</item>
+			<item name="SierraLeone">Sierra Leone</item>
+			<item name="Somalia">Somalia</item>
+			<item name="SouthAfrica">South Africa</item>
+			<item name="Sudan">Sudan</item>
+			<item name="Swaziland">Swaziland</item>
+			<item name="Tanzania">Tanzania</item>
+			<item name="Togo">Togo</item>
+			<item name="Tunisia">Tunisia</item>
+			<item name="Uganda">Uganda</item>
+			<item name="WesternSahara">Western Sahara</item>
+			<item name="Zambia">Zambia</item>
+			<item name="Zimbabwe">Zimbabwe</item>
+			<item name="Kuwait">Kuwait</item>
+    </string-array>
+   
+  
+   <string-array name="device_type"> 
+   		<item name="p_to_p">P2P</item><!-- new -->
+   		<item name="quick_ddns">Quick DDNS</item><!-- new -->
+   		<item name="dahua_ddns">Dahua DDNS</item><!-- new -->
+        <item name="ip_domian">IP/Domain</item><!-- new -->
+    </string-array>
+</resources>

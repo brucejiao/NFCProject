@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:padding="0px"
+  android:orientation="vertical" 
+  android:background="@color/white"
+  >
+  
+  <include 
+  	android:layout_alignParentTop="true"
+  	android:id="@+id/list_tree_title"
+  	layout="@layout/title"/>
+  	
+  <LinearLayout 
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:gravity="right"
+  	android:id="@+id/period_layout"
+  	android:layout_below="@id/list_tree_title"
+  	android:visibility="gone"
+  	android:layout_marginTop="10dp"
+  	android:orientation="vertical"
+  	
+  	>
+  	<LinearLayout
+  		style="@style/config_relativeLayout"
+  		android:background="@drawable/preference_first_item"
+  	>
+  		<TextView 
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_marginLeft="5dp"
+  		android:text="@string/push_period"
+  		android:textStyle="bold"
+  		android:textSize="15dip"
+  		android:textColor="#5A5A5A"
+  		android:focusable="true"
+  		android:focusableInTouchMode="true"
+  		/>
+  		
+  		<TextView 
+			android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:text="@string/common_title_oral_day"
+	  		android:layout_marginRight="10dip"
+	  		android:textColor="#5A5A5A"
+	  		android:textStyle="bold"
+	  		android:textSize="15dip"/>
+	  		
+	  	
+	  	  <RelativeLayout
+	       android:layout_width="0dp"
+	       android:layout_height="wrap_content"
+	       android:gravity="right"
+	       android:layout_weight="1" >
+	       
+	  	   <EditText 
+	  		android:id="@+id/periodDay"
+	  		android:background="@null"
+	  		android:layout_width="80dip"
+	  		android:layout_height="wrap_content"
+	  		android:text="365"
+	  		android:textSize="15dip"
+	  		android:gravity="center_horizontal"
+	  		android:singleLine="true"
+			android:numeric="integer"
+			android:inputType="number"
+			android:layout_marginRight="5dip"
+			android:maxLength="3"/>
+			
+		 </RelativeLayout>
+  	</LinearLayout>
+  	
+  	<LinearLayout
+  		style="@style/config_relativeLayout"   
+  		android:background="@drawable/preference_last_item"
+  	>
+  		<TextView 
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_marginLeft="5dp"
+  		android:text="@string/push_type"
+  		android:layout_marginRight="10dip"
+  		android:textColor="#5A5A5A"
+  		android:textStyle="bold"
+  		android:textSize="15dip"/>
+  		
+  	  <RelativeLayout
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1" >
+  		
+  	  <ImageView 
+  	     android:id="@+id/spinner_pushtype_icon"
+  	     style="@style/spinner_open_icon"
+  	     android:layout_gravity="right"/>
+  	  
+  	  <Spinner 
+       	android:id="@+id/spinner_pushType"
+   		android:layout_marginRight="10dip"
+   		style="@style/spinner_styles"
+   		android:layout_toLeftOf="@id/spinner_pushtype_icon"
+   		android:prompt="@string/push_type"/>
+   		
+   	  </RelativeLayout>
+   	 
+  	</LinearLayout>
+  	
+  	
+  </LinearLayout>
+  
+  <!-- listView 的高度必须设置成wrap_content，否则在摩托的手机上会出现listView没有到达的地方出现白色背景
+  android:divider="#ffffff" 控制item之间线的颜色-->
+  <ListView
+  	android:id="@android:id/list"
+  	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	style="@style/ListView_style"
+	android:descendantFocusability="blocksDescendants"
+	android:layout_below="@id/period_layout"
+	>
+  </ListView>
+  
+  <LinearLayout
+    android:id="@+id/start_parent"
+  	android:layout_width="fill_parent"
+  	android:paddingBottom="40dip"
+  	android:layout_height="wrap_content" 
+  	android:layout_alignParentBottom="true"
+  	android:gravity="center"
+  	android:visibility="gone"	
+  	>
+	  <Button 
+	  	android:id="@+id/start_preview"
+	  	android:gravity="center_horizontal"
+	 	android:text="@string/dev_start_preview"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"/>
+  </LinearLayout>
+  
+  <!-- listActivity是以dialog的方式出现的，加1像素的layout是让这个activity的height可以fillparent -->
+  <LinearLayout 
+  	android:layout_width="fill_parent"
+  	android:layout_height="1px"
+  	android:visibility="invisible"
+  	android:layout_alignParentBottom="true"
+  />
+  
+</RelativeLayout>

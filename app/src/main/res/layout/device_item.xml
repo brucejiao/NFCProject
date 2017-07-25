@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/cameralist_list_bg_selector">
+    <!-- 采用配色放案配置处理“点击”，“获取焦点”等情况的背景图片 -->
+    
+     <ImageView 
+    	android:id="@+id/device_magin"
+    	android:layout_width="24dp"
+    	android:layout_height="24dp"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentLeft="true"
+    	android:layout_marginRight="16dp"
+    	android:visibility="gone"
+    	android:background="@drawable/devicemanager_device_select"
+    	/>
+    	
+    <ImageView 
+    	android:id="@+id/device_icon"
+    	android:layout_width="24dp"
+    	android:layout_height="24dp"
+    	android:layout_centerVertical="true"
+    	android:layout_toRightOf="@id/device_magin"
+    	android:layout_alignWithParentIfMissing="true"
+    	android:layout_marginRight="16dp"
+    	android:background="@drawable/devicemanager_device_select"
+    	/>
+    	
+    <ImageView 
+    	android:id="@+id/device_arrow"
+    	android:layout_width="28dp"
+    	android:layout_height="28dp"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:background="@drawable/devicemanager_arrow_select"
+    	/>
+    
+    <TextView 
+    		android:id="@+id/device_item_desc"
+    		android:layout_width="fill_parent"  
+    		android:layout_height="wrap_content"
+    		android:textSize="15dip"
+    		android:textStyle="bold"
+    		android:layout_centerVertical="true"
+    		android:gravity="left"
+    		android:layout_toRightOf="@id/device_icon"
+    		android:layout_toLeftOf="@id/device_arrow"
+    		android:textColor="@color/camerlist_text_selector" />
+    
+     <!-- 用于存储该条的唯一标示信息 -->
+      <TextView 
+      		android:id="@+id/device_item_id"
+    		android:layout_width="wrap_content"  
+    		android:layout_height="wrap_content"
+    		android:visibility="gone" />
+     
+</RelativeLayout>

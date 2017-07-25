@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/background">
+
+	<include layout="@layout/title" />
+
+	<RelativeLayout
+		android:id="@+id/motion_view" 
+		android:layout_width="fill_parent"
+  	 	android:layout_height="fill_parent">
+  	 	
+  	 	<LinearLayout
+	  	 	android:id="@+id/motion_menu" 
+	  	 	android:layout_width="fill_parent"
+	  	 	android:layout_height="53dp"
+	  		android:padding="6dp" 
+	  	 	android:layout_alignParentBottom="true"
+	  	 	android:orientation="horizontal"
+	  	 	android:background="@drawable/list_filedown_bg"
+	  	 	>
+	  	 	<ImageView 
+	  	 		android:id="@+id/motion_edit"
+	  	 		android:layout_width="26dp"
+	  			android:layout_height="28dp"
+	  			android:scaleType="centerInside"
+	  	 		android:layout_weight="1"
+	  	 		android:layout_gravity="center"
+	  	 		android:src="@drawable/motion_edit_s"/>
+	  	 	
+	  	 	<ImageView 
+	  	 		android:id="@+id/motion_delete"
+	  	 		android:layout_width="26dp"
+	  			android:layout_height="28dp"
+	  			android:scaleType="centerInside"
+	  	 		android:layout_weight="1"
+	  	 		android:layout_gravity="center"
+	  	 		android:src="@drawable/motion_delete_s"/>
+	  	 	
+	  	 	<ImageView 
+	  	 		android:id="@+id/motion_drag"
+	  	 		android:layout_width="26dp"
+	  			android:layout_height="28dp"
+	  			android:scaleType="centerInside"
+	  	 		android:layout_weight="1"
+	  	 		android:layout_gravity="center"
+	  	 		android:src="@drawable/motion_move_s"/>
+	  	 	
+	  	 </LinearLayout>
+	  	 
+	  	 
+	  	 <RelativeLayout
+	  	 	android:layout_width="fill_parent"
+	  	 	android:layout_height="fill_parent"
+	  	 	android:gravity="center"
+	  	 	android:layout_above="@id/motion_menu"
+	  	 	android:orientation="horizontal"
+	  	 	>
+			 <!--android:layout_above="@id/motion_menu"-->
+	  	  <com.company.Demo.CustomScrollView
+		  	    android:id="@+id/motion_vScroll"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:scrollbars="none">
+                 <com.company.Demo.CustomHScrollView
+		        	 android:id="@+id/motion_hScroll"
+		             android:layout_width="fill_parent"
+		             android:layout_height="fill_parent"
+		             android:scrollbars="none"
+	             >
+	       			<LinearLayout
+	       				android:id="@+id/motion_area_parent"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:orientation="vertical" >
+	                   <com.company.Demo.MotionAreaView
+			        	   android:id="@+id/motion_areaView"
+					    	android:layout_width="fill_parent"
+						  	android:layout_height="fill_parent"
+					  	 />
+	                   </LinearLayout>
+	         </com.company.Demo.CustomHScrollView>
+		</com.company.Demo.CustomScrollView>
+		</RelativeLayout>
+	  	 	
+	</RelativeLayout>
+	
+</LinearLayout>

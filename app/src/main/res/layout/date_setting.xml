@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white">
+  
+  <include layout="@layout/title"
+  	/>
+  	
+   <ScrollView 
+    	android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none">
+        
+        
+        <LinearLayout 
+		    	android:layout_height="match_parent"
+		        android:layout_width="match_parent"
+		        android:orientation="vertical"
+		   	 >
+            <LinearLayout 
+            	android:layout_marginTop="20dp"
+		    	android:layout_height="match_parent"
+		        android:layout_width="match_parent"
+		        android:orientation="vertical"
+		        android:background="@drawable/preference_single_item"
+		   	 >
+	    	
+	   	   <TextView
+	           android:layout_width="fill_parent"
+	           android:layout_height="fill_parent"
+	           android:textColor="#000"
+	           android:textSize="17sp"
+	           android:text="@string/pb_start_time"
+	           android:layout_marginTop="20dp"
+	           android:layout_marginBottom="5dp"
+	           />
+	     
+			<TimePicker android:id="@+id/timePicker"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        />
+		
+			<TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:textColor="#000"
+	            android:textSize="17sp"
+	            android:text="@string/pb_end_time"
+	            android:layout_marginTop="20dp"
+	            android:layout_marginBottom="5dp"/>
+	            
+			<TimePicker android:id="@+id/timePicker2"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:layout_marginBottom="20dp"
+		       />
+		       
+		      <Button 
+	        	android:id="@+id/date_ok"
+		   		android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_margin="10dp"
+		        android:layout_gravity="center_horizontal"
+		        android:minWidth="200dp"
+		        android:text="@string/common_confirm"
+		        />
+	   
+	    </LinearLayout>
+	    </LinearLayout>
+   </ScrollView>
+    
+</LinearLayout>

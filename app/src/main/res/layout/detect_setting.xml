@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/detect_date_layout"
+                style="@style/config_relativeLayout"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_first_item" >
+
+                <TextView
+                    style="@style/config_text"
+                    android:text="@string/common_title_date" />
+
+                <TextView
+                    android:id="@+id/detect_date"
+                    style="@style/config_text_image"
+                    android:drawableRight="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detect_copy_layout"
+                style="@style/config_relativeLayout"
+                android:background="@drawable/preference_last_item" >
+
+                <TextView
+                    android:id="@+id/detect_copy_text"
+                    style="@style/config_text"
+                    android:text="@string/remote_copy_time" />
+
+                <TextView
+                    android:id="@+id/detect_copy"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/detect_copy_text"
+                    android:drawableRight="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detect_time1_layout"
+                style="@style/config_relativeLayout"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_first_item" >
+
+                <ImageView
+                    android:id="@+id/detect_time1_check"
+                    style="@style/config_image_left"
+                    android:src="@drawable/mm_on_off"
+                    android:tag="off" />
+
+                <TextView
+                    android:id="@+id/detect_time1_text"
+                    style="@style/config_text"
+                    android:layout_toRightOf="@id/detect_time1_check" />
+
+                <TextView
+                    android:id="@+id/detect_time1"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/detect_time1_text"
+                    android:drawableRight="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detect_time2_layout"
+                style="@style/config_relativeLayout"
+                android:background="@drawable/preference_item" >
+
+                <ImageView
+                    android:id="@+id/detect_time2_check"
+                    style="@style/config_image_left"
+                    android:src="@drawable/mm_on_off"
+                    android:tag="off" />
+
+                <TextView
+                    android:id="@+id/detect_time2_text"
+                    style="@style/config_text"
+                    android:layout_toRightOf="@id/detect_time2_check" />
+
+                <TextView
+                    android:id="@+id/detect_time2"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/detect_time2_text"
+                    android:drawableRight="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detect_time3_layout"
+                style="@style/config_relativeLayout"
+                android:background="@drawable/preference_item" >
+
+                <ImageView
+                    android:id="@+id/detect_time3_check"
+                    style="@style/config_image_left"
+                    android:src="@drawable/mm_on_off"
+                    android:tag="off" />
+
+                <TextView
+                    android:id="@+id/detect_time3_text"
+                    style="@style/config_text"
+                    android:layout_toRightOf="@id/detect_time3_check" />
+
+                <TextView
+                    android:id="@+id/detect_time3"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/detect_time3_text"
+                    android:drawableRight="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detect_time4_layout"
+                style="@style/config_relativeLayout"
+                android:background="@drawable/preference_item" >
+
+                <ImageView
+                    android:id="@+id/detect_time4_check"
+                    style="@style/config_image_left"
+                    android:src="@drawable/mm_on_off"
+                    android:tag="off" />
+
+                <TextView
+                    android:id="@+id/detect_time4_text"
+                    style="@style/config_text"
+                    android:layout_toRightOf="@id/detect_time4_check" />
+
+                <TextView
+                    android:id="@+id/detect_time4"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/detect_time4_text"
+                    android:drawableRight="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detect_time5_layout"
+                style="@style/config_relativeLayout"
+                android:background="@drawable/preference_item" >
+
+                <ImageView
+                    android:id="@+id/detect_time5_check"
+                    style="@style/config_image_left"
+                    android:src="@drawable/mm_on_off"
+                    android:tag="off" />
+
+                <TextView
+                    android:id="@+id/detect_time5_text"
+                    style="@style/config_text"
+                    android:layout_toRightOf="@id/detect_time5_check" />
+
+                <TextView
+                    android:id="@+id/detect_time5"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/detect_time5_text"
+                    android:drawableRight="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detect_time6_layout"
+                style="@style/config_relativeLayout"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/preference_last_item" >
+
+                <ImageView
+                    android:id="@+id/detect_time6_check"
+                    style="@style/config_image_left"
+                    android:src="@drawable/mm_on_off"
+                    android:tag="off" />
+
+                <TextView
+                    android:id="@+id/detect_time6_text"
+                    style="@style/config_text"
+                    android:layout_toRightOf="@id/detect_time6_check" />
+
+                <TextView
+                    android:id="@+id/detect_time6"
+                    style="@style/config_text_image"
+                    android:layout_toRightOf="@id/detect_time6_text"
+                    android:drawableRight="@drawable/mm_submenu" />
+            </RelativeLayout>
+        </LinearLayout> <!-- end parent LinearLayout -->
+
+    </ScrollView>
+
+</LinearLayout>

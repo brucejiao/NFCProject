@@ -1,0 +1,63 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* proguard.cfg
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => testNetSDK\src\main\AndroidManifest.xml
+* assets\ => testNetSDK\src\main\assets
+* libs\armeabi\libaaccodec.so => testNetSDK\src\main\jniLibs\armeabi\libaaccodec.so
+* libs\armeabi\libaacdec.so => testNetSDK\src\main\jniLibs\armeabi\libaacdec.so
+* libs\armeabi\libadpcmdec.so => testNetSDK\src\main\jniLibs\armeabi\libadpcmdec.so
+* libs\armeabi\libamrcodec.so => testNetSDK\src\main\jniLibs\armeabi\libamrcodec.so
+* libs\armeabi\libamrdec.so => testNetSDK\src\main\jniLibs\armeabi\libamrdec.so
+* libs\armeabi\libconfigsdk.so => testNetSDK\src\main\jniLibs\armeabi\libconfigsdk.so
+* libs\armeabi\libfisheye.so => testNetSDK\src\main\jniLibs\armeabi\libfisheye.so
+* libs\armeabi\libgnustl_shared.so => testNetSDK\src\main\jniLibs\armeabi\libgnustl_shared.so
+* libs\armeabi\libh264dec_ansic.so => testNetSDK\src\main\jniLibs\armeabi\libh264dec_ansic.so
+* libs\armeabi\libh264dec_neon.so => testNetSDK\src\main\jniLibs\armeabi\libh264dec_neon.so
+* libs\armeabi\libh26ldec.so => testNetSDK\src\main\jniLibs\armeabi\libh26ldec.so
+* libs\armeabi\libhevcdec.so => testNetSDK\src\main\jniLibs\armeabi\libhevcdec.so
+* libs\armeabi\libjninetsdk.so => testNetSDK\src\main\jniLibs\armeabi\libjninetsdk.so
+* libs\armeabi\libjniplay.so => testNetSDK\src\main\jniLibs\armeabi\libjniplay.so
+* libs\armeabi\libmjpegdec.so => testNetSDK\src\main\jniLibs\armeabi\libmjpegdec.so
+* libs\armeabi\libmp2dec.so => testNetSDK\src\main\jniLibs\armeabi\libmp2dec.so
+* libs\armeabi\libmp3dec.so => testNetSDK\src\main\jniLibs\armeabi\libmp3dec.so
+* libs\armeabi\libmpeg4dec.so => testNetSDK\src\main\jniLibs\armeabi\libmpeg4dec.so
+* libs\armeabi\libnetsdk.so => testNetSDK\src\main\jniLibs\armeabi\libnetsdk.so
+* libs\armeabi\liboggdec.so => testNetSDK\src\main\jniLibs\armeabi\liboggdec.so
+* libs\armeabi\libplay.so => testNetSDK\src\main\jniLibs\armeabi\libplay.so
+* libs\armeabi\libpostproc.so => testNetSDK\src\main\jniLibs\armeabi\libpostproc.so
+* libs\armeabi\libStreamPackage.so => testNetSDK\src\main\jniLibs\armeabi\libStreamPackage.so
+* libs\armeabi\libStreamParser.so => testNetSDK\src\main\jniLibs\armeabi\libStreamParser.so
+* libs\armeabi\libsvac_dec.so => testNetSDK\src\main\jniLibs\armeabi\libsvac_dec.so
+* libs\armeabi\libToUProxy.so => testNetSDK\src\main\jniLibs\armeabi\libToUProxy.so
+* libs\IPlaySDK.jar => testNetSDK\libs\IPlaySDK.jar
+* libs\libToUProxy.jar => testNetSDK\libs\libToUProxy.jar
+* res\ => testNetSDK\src\main\res\
+* src\ => testNetSDK\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

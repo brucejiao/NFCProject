@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>FrozenUI Demo</title>
+        <link rel="stylesheet" href="dist/css/frozen.css">
+        <link rel="stylesheet" href="demo.css">
+        <script src="dist/lib/zepto.min.js"></script>
+        <script src="dist/js/frozen.js"></script>
+		<script src="dist/js/jquery-3.1.1.js"></script>
+		<script src="cccx.js"></script>
+    </head>
+    
+    <body ontouchstart>
+
+    <section class="ui-container">
+
+
+
+
+<section id="tab">
+	<div class="demo-item">
+		
+		<div class="demo-block">
+			<div class="ui-tab" id="tab1">
+			    <ul class="ui-tab-nav ui-border-b">
+			        <li class="current">基本信息</li>
+			        <li>仓房属性</li>
+					<li>储粮信息</li>
+			    </ul>
+			    <ul class="ui-tab-content" style="width:300%">
+			        <li>
+					    <div class="demo-item">
+							<div class="demo-block">
+								<div class="ui-form ui-border-t">
+									
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓房号</label>
+											<input id="housenum" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">所属部门</label>
+											<input id="dept" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">货位数</label>
+											<input id="goodsnum" type="text" value="" readonly>
+										</div>
+									    <!--
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">楼层数</label>
+											<input id="floornum" type="text" value="" readonly>
+										</div>
+										-->
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">保管员</label>
+											<input id="user" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓容</label>
+											<input id="housespace" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓房类型</label>
+											<input id="housetype" type="text" value="" readonly>
+										</div>
+									    <div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">交付日期</label>
+											<input id="delivery" type="text" value="" readonly>
+										</div>
+											<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓房状态</label>
+											<input id="stutas" type="text" value="" readonly>
+										</div>
+								</div>
+							</div>
+						</div>
+					</li>
+			       	<li>
+					    <div class="demo-item">
+							<div class="demo-block">
+								<div class="ui-form ui-border-t">
+									<form action="#" >
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">墙体</label>
+											<input id="wall" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">墙体长度</label>
+											<input id="walllength" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">墙体宽度</label>
+											<input id="wallwide" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">墙体厚度</label>
+											<input id="wallthickness" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓门数量</label>
+											<input id="housenumber" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓门高度</label>
+											<input id="househeight" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓门宽度</label>
+											<input id="housewide" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">房顶</label>
+											<input id="roof" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">檐高</label>
+											<input id="eavesheight" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">房架</label>
+											<input id="roomframe" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">顶高</label>
+											<input id="topheight" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">风道类型</label>
+											<input id="fluetype" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">地面</label>
+											<input id="ground" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">筒仓外径</label>
+											<input id="silood" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">通风口数量</label>
+											<input id="ventilatenum" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">设计容量</label>
+											<input id="designcapacity" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">筒仓内径</label>
+											<input id="siloinnerdiameter" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">轴流风机数</label>
+											<input id="axialflowfannum" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">核定容量</label>
+											<input id="checkcapacity" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">空仓气密集性</label>
+											<input id="shortpositionwgd" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">堆粮线高</label>
+											<input id="pilegrainlinehigh" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓内体积</label>
+											<input id="chambervolume" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">隔热措施</label>
+											<input id="heatinsulation" type="text" value="" readonly>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+					    <div class="demo-item">
+							<div class="demo-block">
+								<div class="ui-form ui-border-t">
+									
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">粮食属性</label>
+											<input id="graintproperty" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">粮食种类</label>
+											<input id="grainttype" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">粮食数量</label>
+											<input id="graintcount" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">粮食等级</label>
+											<input id="grade" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">粮食年期</label>
+											<input id="grainyear" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">粮权所属</label>
+											<input id="owner" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">入库时间</label>
+											<input id="inBeginTime" type="text" value="" readonly>
+										</div>
+										<div class="ui-form-item ui-form-item-show ui-border-b">
+											<label for="#">仓储时间</label>
+											<input id="storeBeginTime" type="text" value="" readonly>
+										</div>
+									
+								</div>
+							</div>
+						</div>
+					</li>
+			    </ul>
+			</div>
+		</div>
+		<script class="demo-script">
+		(function (){
+            var tab = new fz.Scroll('#tab1', {
+		        role: 'tab',
+		        autoplay: false,
+		        interval: 3000
+		    });
+		})();
+        </script>
+	</div>
+</section>
+
+        </section><!-- /.ui-container-->
+		<script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        </script>
+    </body>
+</html>

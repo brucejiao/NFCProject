@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/sp_rec_chn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/cb_rec_alarm"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tv_rec_chn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_rec_time"
+        android:layout_alignBottom="@+id/et_rec_time"
+        android:layout_alignParentLeft="true"
+        android:text="@string/record_plan_pre_rec"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_rec_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_rec_chn"
+        android:layout_alignLeft="@+id/tv_rec_chn"
+        android:layout_marginBottom="14dp"
+        android:text="@string/record_plan_chn"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_rec_time"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/sp_rec_chn"
+        android:layout_below="@+id/sp_rec_chn"
+        android:layout_toLeftOf="@+id/cb_rec_redundancy"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_rec_redundancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cb_rec_redundancy"
+        android:layout_marginTop="16dp"
+        android:text="@string/record_plan_stream"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/sp_rec_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_rec_chn"
+        android:layout_below="@+id/cb_rec_redundancy" />
+
+    <CheckBox
+        android:id="@+id/cb_rec_redundancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_rec_time"
+        android:layout_alignBottom="@+id/et_rec_time"
+        android:layout_alignParentRight="true"
+        android:text="@string/record_plan_redundancy" />
+
+    <Button
+        android:id="@+id/bt_rec_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/record_plan_save" />
+
+    <TextView
+        android:id="@+id/tv_rec_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_rec_redundancy"
+        android:layout_below="@+id/sp_rec_stream"
+        android:layout_marginTop="18dp"
+        android:text="@string/record_plan_day"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/sp_rec_day"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_rec_stream"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_rec_stream" />
+
+    <Spinner
+        android:id="@+id/sp_rec_seg"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_rec_day"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_rec_day" />
+
+    <TextView
+        android:id="@+id/tv_rec_seg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_rec_day"
+        android:layout_alignTop="@+id/sp_rec_seg"
+        android:layout_marginTop="14dp"
+        android:text="@string/record_plan_seg"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_rec_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sp_rec_seg"
+        android:layout_marginTop="18dp"
+        android:text="@string/record_plan_start"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_rec_start_hour"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/tv_rec_start"
+        android:layout_alignBottom="@+id/tv_rec_start"
+        android:layout_alignLeft="@+id/bt_rec_save"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_rec_start_m_2"
+        android:layout_width="10dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/et_rec_start_min"
+        android:layout_alignBottom="@+id/et_rec_start_min"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/et_rec_start_sec"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_rec_stop_hour"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/et_rec_start_hour"
+        android:layout_alignTop="@+id/tv_rec_stop"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_rec_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_rec_start_m_1"
+        android:layout_marginTop="14dp"
+        android:text="@string/record_plan_stop"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_rec_stop_m_1"
+        android:layout_width="10dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/et_rec_stop_hour"
+        android:layout_alignBottom="@+id/et_rec_stop_hour"
+        android:layout_alignLeft="@+id/tv_rec_start_m_1"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_rec_stop_min"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/tv_rec_stop_m_1"
+        android:layout_alignBottom="@+id/tv_rec_stop_m_1"
+        android:layout_alignLeft="@+id/et_rec_start_min"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_rec_stop_m_2"
+        android:layout_width="10dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/et_rec_stop_min"
+        android:layout_alignBottom="@+id/et_rec_stop_min"
+        android:layout_alignLeft="@+id/tv_rec_start_m_2"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_rec_stop_sec"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/tv_rec_stop_m_2"
+        android:layout_alignBottom="@+id/tv_rec_stop_m_2"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/cb_rec_motion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_rec_stop_m_1"
+        android:layout_marginTop="14dp"
+        android:text="@string/record_plan_motion" />
+
+    <CheckBox
+        android:id="@+id/cb_rec_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cb_rec_alarm"
+        android:layout_alignParentRight="true"
+        android:text="@string/record_plan_normal" />
+
+    <CheckBox
+        android:id="@+id/cb_rec_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cb_rec_motion"
+        android:layout_alignBottom="@+id/cb_rec_motion"
+        android:layout_centerHorizontal="true"
+        android:text="@string/record_plan_alarm" />
+
+    <TextView
+        android:id="@+id/tv_rec_start_m_1"
+        android:layout_width="10dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/et_rec_start_hour"
+        android:layout_alignBottom="@+id/et_rec_start_hour"
+        android:layout_alignRight="@+id/bt_rec_save"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_rec_start_min"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/tv_rec_start_m_1"
+        android:layout_alignBottom="@+id/tv_rec_start_m_1"
+        android:layout_toRightOf="@+id/cb_rec_alarm"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_rec_start_sec"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/et_rec_start_min"
+        android:layout_alignBottom="@+id/et_rec_start_min"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/cb_rec_motionandalarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cb_rec_motion"
+        android:text="@string/record_plan_motionandalarm" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBox
+        android:id="@+id/cb_enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/alarm_activity_enable" />
+    
+    <CheckBox
+         android:id="@+id/cb_external"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/cb_enable"
+         android:layout_marginRight="18dp"
+         android:text="@string/alarm_activity_external" />
+
+    <CheckBox
+        android:id="@+id/cb_static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_external"
+        android:layout_below="@+id/cb_shelter"
+        android:text="@string/alarm_activity_static" />
+
+    <CheckBox
+        android:id="@+id/cb_lost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_external"
+        android:layout_below="@+id/cb_external"
+        android:text="@string/alarm_activity_lost" />
+
+    <CheckBox
+        android:id="@+id/cb_dynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_lost"
+        android:layout_below="@+id/cb_lost"
+        android:text="@string/alarm_activity_dynamic" />
+
+    <CheckBox
+        android:id="@+id/cb_shelter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_static"
+        android:layout_below="@+id/cb_dynamic"
+        android:text="@string/alarm_activity_shelter" />
+
+    <Button
+        android:id="@+id/bt_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cb_dynamic"
+        android:layout_alignBottom="@+id/cb_dynamic"
+        android:layout_alignParentLeft="true"
+        android:text="@string/alarm_activity_query" />
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cb_static"
+        android:layout_marginTop="10dp"
+        android:text="@string/alarm_activity_start" />
+
+   
+    <Button
+        android:id="@+id/bt_alarm_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/alarm_activity_alarm_out" />
+
+    <Button
+        android:id="@+id/bt_alarm_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/alarm_activity_alarm_in" />
+
+     <EditText
+        android:id="@+id/et_AlarmInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_start"
+        android:layout_above="@+id/bt_alarm_in"
+        android:scrollHorizontally="true"
+        android:scrollbars="horizontal"
+     	android:scrollbarStyle="insideOverlay"
+        android:focusable="false"
+        android:ems="10"
+        android:inputType="none|textMultiLine" />
+
+</RelativeLayout>

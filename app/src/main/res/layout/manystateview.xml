@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffffff">
+    
+     <EditText
+         android:id="@+id/et_intelbrass_mamy_state"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="text" >
+
+    </EditText>
+    
+    <Button
+        android:id="@+id/bt_intelbrass_many_state_get"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_intelbrass_mamy_state"
+        android:text="@string/get_config" />  
+</RelativeLayout>

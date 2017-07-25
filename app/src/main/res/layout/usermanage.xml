@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_group"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/user_manager_group" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_user"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/user_manager_user" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_right"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/user_manager_right"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/sp_user"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_group"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_group" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sp_right"
+        android:layout_marginTop="17dp"
+        android:text="@string/user_manager_old_psw" />
+
+    <Spinner
+        android:id="@+id/sp_right"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_user"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_user"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/et_oldpsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_right"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_right"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="textPassword" >
+        
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_newpsw_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_oldpsw"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_oldpsw"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_newpsw_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_newpsw_1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_newpsw_1"
+        android:ems="10"
+        android:maxLength="32"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_newpsw_2"
+        android:layout_alignBottom="@+id/et_newpsw_2"
+        android:layout_alignParentLeft="true"
+        android:text="@string/user_manager_conf_psw" />
+
+    <Button
+        android:id="@+id/bt_modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_newpsw_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/user_manager_modify_psw" />
+
+    <Spinner
+        android:id="@+id/sp_group"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/bt_modify"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_newpsw_1"
+        android:layout_alignBottom="@+id/et_newpsw_1"
+        android:layout_alignParentLeft="true"
+        android:text="@string/user_manager_new_psw" />
+
+</RelativeLayout>

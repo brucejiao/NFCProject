@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <SurfaceView 
+        class="SurfaceView"
+    	android:id="@+id/view_PlayWindow"
+		android:layout_centerHorizontal="true"
+   		android:layout_marginTop="10dp"
+    	android:layout_width="350dp" 
+		android:layout_height="250dp"
+    	/>
+
+	<Button
+	    android:id="@+id/bt_pb_file_fast"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/bt_pb_file_pause"
+	    android:layout_alignBottom="@+id/bt_pb_file_pause"
+	    android:layout_toRightOf="@+id/bt_pb_file_pause"
+	    android:text="@string/play_back_fast" />
+
+	<Button
+	    android:id="@+id/bt_pb_file_slow"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/bt_pb_file_fast"
+	    android:layout_alignBottom="@+id/bt_pb_file_fast"
+	    android:layout_toRightOf="@+id/bt_pb_file_fast"
+	    android:text="@string/play_back_slow" />
+
+	<Button
+	    android:id="@+id/bt_pb_file_normal"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/bt_pb_file_slow"
+	    android:layout_alignBottom="@+id/bt_pb_file_slow"
+	    android:layout_toRightOf="@+id/bt_pb_file_slow"
+	    android:text="@string/play_back_normal" />
+
+	<SeekBar
+	    android:id="@+id/sb_pb_file"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/view_PlayWindow" />
+
+	<Button
+	    android:id="@+id/bt_pb_file_pause"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/sb_pb_file"
+	    android:text="@string/play_back_pause" />
+
+</RelativeLayout>

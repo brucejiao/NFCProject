@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/sv_mp"
+        android:layout_centerHorizontal="true"
+   		android:layout_marginTop="10dp"
+    	android:layout_width="350dp" 
+		android:layout_height="250dp" />
+
+    <Spinner
+        android:id="@+id/sp_mp_type"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sv_mp" />
+
+    <Spinner
+        android:id="@+id/sp_mp_chn"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/sp_mp_type" />
+
+    <Button
+        android:id="@+id/bt_mp_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_mp_chn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="@string/multi_play_activity_start" />
+
+</RelativeLayout>

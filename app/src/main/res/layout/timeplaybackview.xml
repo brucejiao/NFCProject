@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/view_PlayWindow"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        class="SurfaceView" />
+
+    <TextView
+        android:id="@+id/begintime_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="350dp"
+        android:text="@string/begin_time" />
+
+    <TextView
+        android:id="@+id/begintime_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="350dp"
+        android:text="2014-2-26" />
+
+    <Button
+        android:id="@+id/set_begin_time_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="340dp"
+        android:text="@string/time_setting" />
+
+    <TextView
+        android:id="@+id/endtime_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="425dp"
+        android:text="2014-2-27" />
+
+    <TextView
+        android:id="@+id/endtime_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/endtime_value"
+        android:layout_alignBottom="@+id/endtime_value"
+        android:layout_alignLeft="@+id/begintime_text"
+        android:text="@string/end_time" />
+
+    <TextView
+        android:id="@+id/tv_end_time_HMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_end_time_HMS"
+        android:layout_alignBottom="@+id/bt_end_time_HMS"
+        android:layout_alignLeft="@+id/endtime_value"
+        android:text="23:59:59" />
+
+    <Button
+        android:id="@+id/bt_begin_time_HMS"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/set_begin_time_btn"
+        android:layout_below="@+id/set_begin_time_btn"
+        android:text="@string/time_setting" />
+
+    <Button
+        android:id="@+id/bt_end_time_HMS"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/set_end_time_btn"
+        android:layout_below="@+id/endtime_value"
+        android:text="@string/time_setting" />
+
+    <TextView
+        android:id="@+id/tv_begin_time_HMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_begin_time_HMS"
+        android:layout_alignBottom="@+id/bt_begin_time_HMS"
+        android:layout_alignLeft="@+id/begintime_value"
+        android:layout_alignParentRight="true"
+        android:text="00:00:00" />
+
+    <Button
+        android:id="@+id/set_end_time_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/endtime_value"
+        android:layout_alignBottom="@+id/endtime_value"
+        android:layout_alignLeft="@+id/bt_begin_time_HMS"
+        android:text="@string/time_setting" />
+
+    <Button
+        android:id="@+id/btn_begincallback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/endtime_value"
+        android:layout_alignParentRight="true"
+        android:text="@string/play_back_by_time_activity_start" />
+
+    <Button
+        android:id="@+id/bt_pb_time_fast"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pb_time_pause"
+        android:layout_alignBottom="@+id/bt_pb_time_pause"
+        android:layout_toRightOf="@+id/bt_pb_time_pause"
+        android:text="@string/play_back_fast" />
+
+    <Button
+        android:id="@+id/bt_pb_time_slow"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pb_time_fast"
+        android:layout_alignBottom="@+id/bt_pb_time_fast"
+        android:layout_toRightOf="@+id/bt_pb_time_fast"
+        android:text="@string/play_back_slow" />
+
+    <Button
+        android:id="@+id/bt_pb_time_normal"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_pb_time_slow"
+        android:layout_alignBottom="@+id/bt_pb_time_slow"
+        android:layout_toRightOf="@+id/bt_pb_time_slow"
+        android:text="@string/play_back_normal" />
+
+    <SeekBar
+        android:id="@+id/sb_pb_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view_PlayWindow" />
+
+    <Button
+        android:id="@+id/bt_pb_time_pause"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sb_pb_time"
+        android:text="@string/play_back_pause" />
+
+</RelativeLayout>

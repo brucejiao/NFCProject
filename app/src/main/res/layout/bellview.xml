@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+	<TextView
+	    android:id="@+id/tv_intelbrass_Start_alarmbell"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:textSize="25sp"
+	    android:text="@string/intelbrass_start_alarmbell" />
+
+	<Spinner
+       android:id="@+id/sp_intelbrass_bell_chn"
+       android:layout_below = "@+id/tv_intelbrass_Start_alarmbell"
+       android:layout_width="200dp"
+       android:layout_height="50dp"
+       android:layout_alignParentRight="true"/>
+
+	<TextView
+	    android:id="@+id/tv_intelbrass_bell_chn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below = "@+id/tv_intelbrass_Start_alarmbell"
+	    android:text="@string/intelbrass_bell_chn" />
+	
+    <CheckBox
+        android:id="@+id/cb_intelbrass_bell_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_intelbrass_bell_chn"
+        android:layout_below="@+id/sp_intelbrass_bell_chn"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_intelbrass_bell_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cb_intelbrass_bell_active"
+        android:layout_alignBottom="@+id/cb_intelbrass_bell_active"
+        android:layout_alignParentLeft="true"
+        android:text="@string/intelbrass_bell_active" />
+    
+    <Button
+        android:id="@+id/bt_intelbrass_bell_set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_intelbrass_bell_active"
+        android:text="@string/set_config" />
+    
+     <View
+        android:id ="@+id/sep_seprate1"
+        android:layout_below="@+id/bt_intelbrass_bell_set"
+        android:layout_width = "fill_parent"
+        android:layout_height="2dp"
+        android:background="#000000" 
+    />
+     
+    <TextView
+        android:id="@+id/tv_intelbrass_slient_alarmbel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sep_seprate1"
+        android:textSize="25sp"
+        android:text="@string/intelbrass_silent_alarmbell"/>
+    
+    <Button
+        android:id="@+id/bt_intelbrass_silent_bell_set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_intelbrass_slient_alarmbel"
+        android:text="@string/set_config" />
+    
+    <View
+        android:id ="@+id/sep_seprate2"
+        android:layout_below="@+id/bt_intelbrass_silent_bell_set"
+        android:layout_width = "fill_parent"
+        android:layout_height="2dp"
+        android:background="#000000" 
+    />
+    
+    <Button
+        android:id="@+id/bt_intelbrass_bell_ret"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_intelbrass_silent_bell_set"
+        android:text="@string/bt_return" />
+    
+   
+</RelativeLayout>

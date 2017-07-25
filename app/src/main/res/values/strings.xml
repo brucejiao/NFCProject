@@ -1,0 +1,468 @@
+<resources>
+    <string name="app_name">智慧皖粮</string>
+    <string name="info">请将手机贴近RFID卡片</string>
+
+    <!--<string name="path">http://ctdz804.iask.in:34787</string>-->
+    <!--<string name="path">http://172.106.3.88:8088</string>-->
+    <!--<string name="path">http://172.115.5.88:8088</string>-->
+    <!--<string name="path">http://172.106.5.88:8088</string>-->
+    <!-- <string name="path">http://172.106.4.88:8088</string>-->
+    <!--<string name="path">http://172.106.6.88:8088</string>-->
+
+    <!--<string name="path">http://172.115.4.88:8088</string>-->
+    <!--<string name="path">http://172.115.6.88:8088</string>-->
+    <!--<string name="path">http://172.106.7.88:8088</string>-->
+    <!-- <string name="path">http://192.168.1.88:8080</string>-->
+    <string name="path">http://ctdz804.iask.in:21054/ </string>
+
+    <string name="login">/grain/storeHouseApp/login.html</string>
+    <string name="getHouseList">/grain/storeHouseApp/getStoreHouseListByEmplyNo.html</string>
+    <string name="getStoreInfo">/grain/storeHouseApp/getStoreInfoByBusinessNum.html</string>
+    <string name="getDebuctionList">/grain/storeHouseApp/getStoreDebuctionList.html</string>
+    <!--仓储查询-->
+    <string name="getHouseInfor">/grain/storeHouseApp/getHouseInfor.html</string>
+    <string name="finish">/grain/storeHouseApp/finishStoreHouse.html</string>
+    <!--粮情列表展示-->
+    <string name="showBarnRsvtempList">/grain/storeHouseApp/showBarnRsvtempList.html</string>
+    <!--show3DDate-->
+    <string name="show3DDate">/grain/storeHouseApp/show3DDate.html</string>
+
+
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+
+    <!--视频String-->
+    <!-- App name -->
+    <string name="DemoInit">演示程序初始化</string>
+    <string name="DemoExit">演示程序退出</string>
+    <string name="SDKVersion">网络SDK版本：</string>
+
+    <!-- Login mode activity -->
+    <string name="login_mode_activity_title">登录方式</string>
+    <string name="login_mode_activity_info">请选择合适的登录环境：</string>
+    <string name="login_mode_activity_ip">IP</string>
+    <string name="login_mode_activity_p2p">P2P</string>
+
+    <!-- p2p activity -->
+    <string name="p2p_activity_title">P2P配置</string>
+    <string name="p2p_activity_ip">服务器地址：</string>
+    <string name="p2p_activity_port">服务器端口：</string>
+    <string name="p2p_activity_password">登录秘钥：</string>
+    <string name="p2p_activity_dev_id">设备序列号：</string>
+    <string name="p2p_activity_dev_port">设备端口：</string>
+    <string name="p2p_activity_config">配置</string>
+    <string name="p2p_activity_autologin">记住配置信息</string>
+    <string name="login_activity_port_err">请检查端口</string>
+
+    <!-- Login activity -->
+    <string name="login_activity_title">登录</string>
+    <string name="login_activity_ip">设备地址：</string>
+    <string name="login_activity_port">设备端口：</string>
+    <string name="login_activity_user">用户名：</string>
+    <string name="login_activity_password">密码：</string>
+    <string name="login_activity_login">登录</string>
+    <string name="login_activity_login_success">登录成功</string>
+    <string name="login_activity_login_failed">登录失败</string>
+    <string name="login_activity_autologin">记住登录信息</string>
+
+    <!-- Functions activity -->
+    <string name="fun_activity_title">功能选择</string>
+    <string name="GlobalSetting">全局设置</string>
+    <string name="MultiPlay">多画面预览</string>
+    <string name="RealPlay">实时监控</string>
+    <string name="Talk">语音对讲</string>
+    <string name="FilePlayBack">按文件回放</string>
+    <string name="TimePlayBack">按时间回放</string>
+    <string name="PicPlayBack">按图片回放</string>
+    <string name="Alarm">报警</string>
+    <string name="UserMan">用户管理</string>
+    <string name="DiskInfo">硬盘信息</string>
+    <string name="RecordPlan">录像计划</string>
+    <string name="MotionDetect">动态检测</string>
+    <string name="ShelterDetect">视频遮挡</string>
+    <string name="TestInterface">接口测试</string>
+    <string name="fun_alarm_out">报警输出</string>
+    <string name="intelbrass">无线报警主机</string>
+
+    <!-- Global setting activity -->
+    <string name="global_setting_activity_title">全局设置</string>
+    <string name="global_setting_activity_chn">视频通道：</string>
+    <string name="global_setting_activity_pb_stream">回放码流：</string>
+    <string name="global_setting_activity_pb_stream_all">主辅码流</string>
+    <string name="global_setting_activity_pb_stream_main">主码流</string>
+    <string name="global_setting_activity_pb_stream_sub">辅码流</string>
+
+    <!-- multiple play activity -->
+    <string name="multi_play_activity_title">多画面预览</string>
+    <string name="multi_play_activity_info">设备不支持多画面预览</string>
+    <string name="multi_play_activity_start">开始</string>
+    <string name="multi_play_activity_stop">停止</string>
+    <string name="multi_play_activity_type_prm">请选择画面数量</string>
+    <string name="multi_play_activity_mp_1">1 画面</string>
+    <string name="multi_play_activity_mp_4">4 画面</string>
+    <string name="multi_play_activity_mp_8">8 画面</string>
+    <string name="multi_play_activity_mp_9">9 画面</string>
+    <string name="multi_play_activity_mp_16">16 画面</string>
+    <string name="multi_play_activity_mp_6">6 画面</string>
+    <string name="multi_play_activity_mp_12">12 画面</string>
+    <string name="multi_play_activity_mp_25">25 画面</string>
+    <string name="multi_play_activity_mp_36">36 画面</string>
+    <string name="multi_play_activity_chn_prm">请选择起始通道</string>
+
+    <!-- Real play activity -->
+    <string name="live_activity_title">实时监控</string>
+    <string name="live_activity_ptz">云台控制</string>
+    <string name="live_activity_flash">灯光控制</string>
+    <string name="live_activity_start">开始录像</string>
+    <string name="live_activity_stop">停止录像</string>
+    <string name="live_activity_open_sound">声音</string>
+    <string name="live_activity_close_sound">静音</string>
+    <string name="live_activity_encode">码流配置</string>
+    <string name="live_activity_capture">本地抓图</string>
+    <string name="live_activity_snap">远程抓图</string>
+    <string name="live_activity_volume">音量</string>
+    <string name="live_activity_quality">画质</string>
+    <string name="live_activity_speed_1">速度: 1</string>
+    <string name="live_activity_speed_2">速度: 2</string>
+    <string name="live_activity_speed_3">速度: 3</string>
+    <string name="live_activity_speed_4">速度: 4</string>
+    <string name="live_activity_speed_5">速度: 5</string>
+    <string name="live_activity_speed_6">速度: 6</string>
+    <string name="live_activity_speed_7">速度: 7</string>
+    <string name="live_activity_speed_8">速度: 8</string>
+
+    <!-- Flash pop window -->
+    <string name="flash_enable">使能</string>
+
+    <!-- PTZ pop window -->
+    <string name="live_activity_more">其余</string>
+    <string name="live_activity_Up">上</string>
+    <string name="live_activity_Left">左</string>
+    <string name="live_activity_Right">右</string>
+    <string name="live_activity_Down">下</string>
+    <string name="live_activity_LUp">左上</string>
+    <string name="live_activity_RUp">右上</string>
+    <string name="live_activit_LDown">左下</string>
+    <string name="live_activity_RDown">右下</string>
+    <string name="live_activity_Speed">速度</string>
+    <string name="live_activity_z_add">变倍+</string>
+    <string name="live_activity_z_dec">变倍-</string>
+    <string name="live_activity_f_add">变焦+</string>
+    <string name="live_activity_f_dec">变焦-</string>
+    <string name="live_activity_a_add">光圈+</string>
+    <string name="live_activity_a_dec">光圈-</string>
+    <string name="live_activity_speed_prom">选择云台控制速度</string>
+
+    <!-- Assistant pop window -->
+    <string name="live_activity_assist">助手</string>
+
+    <!-- Encode config -->
+    <string name="encode_activity_title">码流配置</string>
+    <string name="encode_activity_mode">压缩格式：</string>
+    <string name="encode_activity_resolution">分辨率：</string>
+    <string name="encode_activity_fps">帧率(FPS)：</string>
+    <string name="encode_activity_bitrate">码流：</string>
+    <string name="encode_activity_set">设置</string>
+    <string name="encode_activity_bitrate_ref">码流范围：</string>
+
+    <!-- quality -->
+    <string name="quality_activity_bright">亮度</string>
+    <string name="quality_activity_contrast">对比度</string>
+    <string name="quality_activity_saturation">饱和度</string>
+    <string name="quality_activity_huen">色调</string>
+
+
+    <!-- Search record file activity -->
+    <string name="search_activity_title">查询录像</string>
+    <string name="search_activity_search">查询</string>
+
+    <!-- Play back by file activity -->
+    <string name="play_back_by_file_activity_title">按文件回放</string>
+    <!-- Play back time activity -->
+    <string name="play_back_by_time_activity_title">按时间回放</string>
+    <string name="play_back_by_time_activity_start">回放录像</string>
+
+    <!-- Play back by pictures activity -->
+    <string name="play_back_by_pic_title">按图片回放</string>
+    <string name="play_back_by_pic_play">回放图片</string>
+    <string name="play_back_by_pic_info_no_pic">没有可供显示的图片</string>
+
+    <!-- Talk activity -->
+    <string name="talk_activity_title">语音对讲</string>
+    <string name="CodeType">编码类型：</string>
+    <string name="StartTalk">开始对讲</string>
+    <string name="StopTalk">结束对讲</string>
+    <string name="SpeakOnly">喊话</string>
+    <string name="EnableWait">等待超时</string>
+
+    <!-- Alarm activity -->
+    <string name="alarm_activity_title">报警查询订阅</string>
+    <string name="alarm_activity_enable">报警布防</string>
+    <string name="alarm_activity_external">外部报警</string>
+    <string name="alarm_activity_lost">视频丢失</string>
+    <string name="alarm_activity_dynamic">动态检测</string>
+    <string name="alarm_activity_shelter">遮挡报警</string>
+    <string name="alarm_activity_static">静态报警</string>
+    <string name="alarm_activity_query">查询告警状态</string>
+    <string name="alarm_activity_start">开始监听</string>
+    <string name="alarm_activity_stop">停止监听</string>
+    <string name="alarm_activity_alarm_in">报警输入</string>
+    <string name="alarm_activity_alarm_out">报警输出</string>
+
+    <!-- User Manager activity -->
+    <string name="user_manager_title">用户管理</string>
+    <string name="user_manager_group">用户组：</string>
+    <string name="user_manager_user">用户：</string>
+    <string name="user_manager_right">权限：</string>
+    <string name="user_manager_old_psw">旧密码：</string>
+    <string name="user_manager_new_psw">新密码：</string>
+    <string name="user_manager_conf_psw">确认密码：</string>
+    <string name="user_manager_modify_psw">修改密码</string>
+    <string name="user_manager_psw_dif">输入的两次新密码不一样</string>
+
+    <!-- Disk info activity -->
+    <string name="disk_info_title">硬盘信息</string>
+    <string name="disk_info_name">名称：</string>
+    <string name="disk_info_state">状态：</string>
+    <string name="disk_info_rest">剩余容量：</string>
+    <string name="disk_info_total">总容量：</string>
+    <string name="disk_info_disk_name">硬盘</string>
+    <string name="disk_info_hiberation">休眠</string>
+    <string name="disk_info_active">活动</string>
+    <string name="disk_info_malfucntion">故障</string>
+
+    <!-- Record plan activity -->
+    <string name="record_plan_title">录像计划</string>
+    <string name="record_plan_chn">通道：</string>
+    <string name="record_plan_pre_rec">预录(s)：</string>
+    <string name="record_plan_redundancy">录像冗余</string>
+    <string name="record_plan_stream">码流：</string>
+    <string name="record_plan_day">星期：</string>
+    <string name="record_plan_seg">时间段：</string>
+    <string name="record_plan_start">开始时间：</string>
+    <string name="record_plan_stop">停止时间：</string>
+    <string name="record_plan_save">保存</string>
+    <string name="record_plan_seg1">时间段 1</string>
+    <string name="record_plan_seg2">时间段 2</string>
+    <string name="record_plan_seg3">时间段 3</string>
+    <string name="record_plan_seg4">时间段 4</string>
+    <string name="record_plan_seg5">时间段 5</string>
+    <string name="record_plan_seg6">时间段 6</string>
+    <string name="record_plan_motion">动检</string>
+    <string name="record_plan_alarm">报警</string>
+    <string name="record_plan_normal">普通</string>
+    <string name="record_plan_motionandalarm">动检&#038;报警</string>
+    <string name="record_plan_get_failed">获取录像配置计划失败</string>
+    <string name="record_plan_prerec_failed">预录时间超出范围</string>
+    <string name="record_plan_time_failed">开始时间大于结束时间</string>
+    <string name="record_plan_time_invalid">开始时间或者结束时间非法</string>
+
+    <!-- IntelBrass -->
+    <string name="intelbrass_title">无线报警主机</string>
+    <string name="intelbrass_armed">整体布撤防</string>
+    <string name="intelbrass_armed_mode">模式：</string>
+    <string name="intelbrass_armed_scene">场景：</string>
+    <string name="intelbrass_armed_psw">密码：</string>
+    <string name="intelbrass_subsystem">子区布撤防</string>
+    <string name="intelbrass_subsystem_chn">通道：</string>
+    <string name="intelbrass_subsystem_active">启用：</string>
+    <string name="intelbrass_bypass">旁路设置</string>
+    <string name="intelbrass_bypass_local_chn">本地通道： </string>
+    <string name="intelbrass_bypass_ext_chn">扩展通道：</string>
+    <string name="intelbrass_bypass_mode">模式：</string>
+    <string name="intelbrass_bypass_psw">密码：</string>
+    <string name="intelbrass_pgm">PGM设置</string>
+    <string name="intelbrass_pgm_chn">通道：</string>
+    <string name="intelbrass_pgm_active">触发报警：</string>
+    <string name="intelbrass_bell">警号设置</string>
+    <string name="intelbrass_start_alarmbell">有声报警 </string>
+    <string name="intelbrass_silent_alarmbell">无声报警 </string>
+    <string name="intelbrass_bell_chn">通道：</string>
+    <string name="intelbrass_bell_active">警号：</string>
+    <string name="intelbrass_cid">报警事件</string>
+    <string name="intelbrass_cid_start">开始监听</string>
+    <string name="intelbrass_cid_stop">停止监听</string>
+    <string name="intelbrass_state">报警通道状态</string>
+    <string name="intelbrass_state_type">类型：</string>
+    <string name="intelbrass_state_count">输入个数：</string>
+    <string name="intelbrass_state_ret">返回个数：</string>
+    <string name="intelbrass_state_chn">通道：</string>
+    <string name="intelbrass_state_state">状态：</string>
+    <string name="intelbrass_arm_mode">布防撤防状态</string>
+    <string name="intelbrass_arm_mode_Mode">布撤防状态</string>
+    <string name="intelbrass_many_state">各类状态查询</string>
+    <!-- Interface testing activity -->
+    <string name="testing_activity_title">接口测试</string>
+
+    <!-- Remote Config -->
+    <string name="remote_type_video_detect">视频检测</string>
+    <string name="remote_type_video_detect_motion">动态检测</string>
+    <string name="remote_type_video_detect_blind">视频遮挡</string>
+    <string name="remote_type_alarm">报警设置</string>
+    <string name="remote_type_alarm_PIR">PIR报警</string>
+    <string name="remote_type_alarm_light">补光灯</string>
+    <string name="remote_type_alarm_linkage">报警联动</string>
+    <string name="remote_type_camera">相机设置</string>
+    <string name="remote_type_camera_stream">视频码流</string>
+    <string name="remote_type_storage">存储管理</string>
+    <string name="remote_type_storage_time">时间表</string>
+    <string name="remote_type_account">用户管理</string>
+    <string name="remote_type_account_pwd_modify">修改密码</string>
+    <string name="remote_chn_num">通道</string>
+    <string name="remote_enable">启动</string>
+    <string name="remote_advanced_option">高级配置</string>
+    <string name="remote_detect_time">布撤防时间段</string>
+    <string name="remote_dejitter">去抖动</string>
+    <string name="remote_dejitter_time">0-100秒</string>
+    <string name="remote_sensitivity">灵敏度</string>
+    <string name="remote_region">区域设置</string>
+    <string name="remote_delay">延时</string>
+    <string name="remote_delay_tiem">30-100秒</string>
+    <string name="remote_record">录像</string>
+    <string name="remote_chn_chose">通道选择</string>
+    <string name="remote_alarm_out">报警输出</string>
+    <string name="remote_alarm_in">报警输入</string>
+    <string name="remote_snaptshot">抓图</string>
+    <string name="remote_sensor_type">传感器类型</string>
+    <string name="remote_copy_time">复制</string>
+    <string name="remote_second">秒</string>
+    <string name="remote_recotd_type_normal">普通</string>
+    <string name="remote_recotd_type_motion">动检</string>
+    <string name="remote_recotd_type_alarm">报警</string>
+    <string name="remote_modify_flashlight">补光灯调节</string>
+
+    <!-- Remote Config-Channel Config -->
+    <string name="remote_chn_chn_num">通　　道:</string>
+    <string name="remote_chn_cfg">通道配置:</string>
+    <string name="remote_chn_chn_name">通道名称:</string>
+    <string name="remote_chn_chn_name_null">通道名称不能为空！</string>
+    <string name="remote_chn_chn_name_too_long">通道名称过长！</string>
+    <string name="remote_chn_encode_type">编码模式:</string>
+    <string name="remote_chn_video">视频</string>
+    <string name="remote_chn_audio">音频</string>
+    <string name="remote_chn_video_audio">视频/音频:</string>
+    <string name="remote_chn_resolution">分\u0020\u0020辨\u0020\u0020率:</string>
+    <string name="remote_chn_frame_rate">帧　　率:</string>
+    <string name="remote_chn_bit_rate">比特速率:</string>
+    <string name="remote_chn_bit_rate_range">比特范围:</string>
+    <string name="remote_chn_already_open">通道已打开</string>
+    <string name="remote_chn_open_failed">获取通道配置失败</string>
+    <string name="remote_chn_open_channel_first">请先打开至少一个通道</string>
+    <string name="remote_chn_bit_rate_not_null">比特速率不能为空</string>
+    <string name="remote_chn_bit_rate_type">码率控制:</string>
+    <string name="remote_chn_img_quality">画　　质:</string>
+    <string name="remote_chn_config_connection">正在配置中...</string>
+    <string name="remote_sensor_type_nc">常关</string>
+    <string name="remote_sensor_type_no">常开</string>
+
+    <!-- Common-Message in Pop-up box -->
+    <string name="common_msg_unknow_error">未知错误</string>
+    <string name="common_msg_title">提示</string>
+    <string name="common_msg_wait">请稍等.....</string>
+
+    <!-- Message-Configuration -->
+    <string name="common_msg_get_cfg">正在获取配置</string>
+    <string name="common_msg_get_cfg_failed">获取配置失败</string>
+    <string name="common_msg_save_cfg">正在保存配置</string>
+    <string name="common_msg_save_cfg_success">保存配置成功</string>
+    <string name="common_msg_save_cfg_failed">保存配置失败</string>
+    <string name="common_msg_cannot_save">无法保存配置</string> <!-- New -->
+
+    <!-- Alarm Push -->
+    <string name="push_delete_push">确定要取消报警推送？</string>
+    <string name="push_cancel_push">取消订阅成功</string>
+    <string name="push_cancel_push_failed">取消订阅失败</string>
+    <string name="push_push_success">订阅成功</string>
+    <string name="push_push_failed">订阅失败</string>
+    <string name="push_period">有效时间</string>
+    <string name="push_period_invalid">有效日期在1~365天之内</string>
+    <string name="push_chn_not_exist">通道不存在</string>
+    <string name="push_subscribe_failed">订阅失败！请确认已登录Google账户</string>
+    <string name="push_type">推送类型</string>
+    <string name="push_no_record_open_preview">没有记录，改为打开实时监视</string>
+    <string name="push_no_data">无报警</string>
+    <string name="push_type_disk_alarm">磁盘报警</string>
+    <string name="push_update_prompt">谷歌服务器升级后，需要重新订阅才能正常接收推送消息。现在开始？如果选择取消，您也可以在“推送设置”中进行操作。 </string>
+    <string name="push_update_prompt_ios">因为程序使用推送证书到期，需要重新订阅才能正常接收推送消息。您可以在“推送设置”重新订阅。</string>
+    <string name="push_re_subscribe_wait">重新订阅中……</string>
+    <string name="push_refresh_prompt">刷新订阅以获取推送消息</string>
+
+    <!-- Common-Time Related -->
+    <string name="common_title_date">日期</string>
+    <string name="common_title_time">时间段</string>
+    <string name="common_title_year">年</string>
+    <string name="common_title_month">月</string>
+    <string name="common_title_day">日</string>
+    <string name="common_title_oral_day">(天)</string>
+    <string name="common_title_hour">小时</string>
+    <string name="common_title_minute">分</string>
+    <string name="common_title_second">秒</string>
+    <string name="common_title_comma">,</string>
+
+    <!-- Device Manager-text on page -->
+    <string name="dev_name">名　　称:</string>
+    <string name="dev_address">地　　址:</string>
+    <!--dev_sn 中文需要考虑对齐-->
+    <string name="dev_sn">序\u0020\u0020列\u0020\u0020号:</string> <!-- new -->
+    <string name="dev_port">端　　口:</string>
+    <string name="dev_username">用\u0020\u0020户\u0020\u0020名:</string>
+    <string name="dev_password">密　　码:</string>
+    <string name="dev_stream_type">码流类型:</string>
+    <string name="dev_stream_main">主码流</string>
+    <string name="dev_stream_extra">辅码流</string>
+    <string name="dev_test_ret_ok">设备连接正常</string>
+    <string name="dev_type">设备类型:</string> <!-- new -->
+    <string name="dev_scan">二维码扫描</string> <!-- new -->
+    <string name="dev_start_preview">开始预览</string> <!-- new -->
+    <string name="dev_import_cloud_dev">导入云端设备</string><!-- new -->
+
+    <!-- Network -->
+    <string name="dev_state_disconnected">[网络已断开]</string>
+    <string name="push_image_notover">图片下载还未完成，是否要退出 ？</string>
+
+    <!-- Common-Button or Page Title -->
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_dev_list">设备列表</string><!-- New -->
+
+    <string name="pb_time_restrict">结束时间必须大于开始时间</string>
+    <string name="pb_start_time">开始时间</string>
+    <string name="pb_end_time">结束时间</string>
+
+    <string name="begin_time">开始时间：</string>
+    <string name="end_time">结束时间：</string>
+    <string name="time_setting">设置</string>
+    <string name="get_config">获取</string>
+    <string name="set_config">设置</string>
+    <string name="subscribe">订阅</string>
+    <string name="operation_cancel">取消</string>
+    <string name="bt_return">返回</string>
+
+    <string name="play_back_pause">暂停</string>
+    <string name="play_back_play">播放</string>
+    <string name="play_back_fast">快进</string>
+    <string name="play_back_slow">慢放</string>
+    <string name="play_back_normal">常速</string>
+
+    <string name="stream_master">主码流</string>
+    <string name="stream_sub1">辅码流-1</string>
+    <string name="stream_sub2">辅码流-2</string>
+    <string name="stream_sub3">辅码流-3</string>
+
+    <string name="week_day_sun">星期日</string>
+    <string name="week_day_mon">星期一</string>
+    <string name="week_day_tue">星期二</string>
+    <string name="week_day_wed">星期三</string>
+    <string name="week_day_thur">星期四</string>
+    <string name="week_day_fri">星期五</string>
+    <string name="week_day_sat">星期六</string>
+
+    <string name="channel_name">通道 </string>
+
+    <string name="info_success">成功</string>
+    <string name="info_failed">失败</string>
+    <string name="info_check">请检查输入</string>
+
+    <string name="info_local_configure">配置本地画面, 详情请查看代码</string>
+    <string name="info_remote_configure">配置设备画面, 详情请查看代码</string>
+</resources>

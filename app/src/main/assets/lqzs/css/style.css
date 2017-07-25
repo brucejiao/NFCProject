@@ -1,0 +1,225 @@
+html{
+  font-size: 16px;
+}
+body{
+  font-family: ºÚÌå;
+  background-color: #fff;
+  font-size: 0.75rem;
+}
+body.bg-gray{
+  background-color: #f4f3ed;
+}
+input{
+  font-family: ºÚÌå;
+}
+.container{
+	width: 100%;
+	padding: 0;
+	position: relative;
+}
+
+/*----------header----------*/
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+header .head{
+  height: 2.75rem;
+  background-color: #f6f5ec;
+  position: relative;
+}
+header .head.style1{
+  background-color: #eae9e5;
+}
+header .head.style2{
+  background-color: #fff;
+}
+header .head >h1{
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.75rem;
+  color: #fff;
+  font-weight: normal;
+}
+header .head.style1 >h1{
+  color: #4d4d4d;
+}
+header .head .logo{
+  width: 4.5rem;
+  vertical-align: middle;
+}
+header .head .bt-a{
+  display: inline-block;
+  width: 2.75rem;
+  height: 2.75rem;
+  position: absolute;
+  top: 0;
+  background: none no-repeat center;
+  background-size: 65% auto;
+}
+header .head .bt-a.ico1{
+  left: 0;
+  background-image: url(../img/ico_li-1.png);
+}
+header .head .bt-a.ico2{
+  right: 0;
+  background-image: url(../img/ico_li-12.png);
+}
+header .head .bt-a.ico2.on{
+  background-image: url(../img/ico_li-2.png);
+}
+header .head .bt-a.ico3{
+  left: 0;
+  background-image: url(../img/ico_li-15.png);
+  background-size: .75rem auto;
+  background-position: .6rem 50%;
+  padding-left: 2rem;
+  width: auto;
+  line-height: 2.75rem;
+  font-size: 1rem;
+  color: #4d4d4d;
+}
+header .head .bt-a.ico4{
+  left: 0;
+  background-image: url(../img/ico_li-20.png);
+  background-size: .75rem auto;
+}
+header .head .bt-a.ico5{
+  right: 0;
+  background-image: url(../img/pic_li-15.png);
+}
+header .head .bt-a.ico5.on{
+  background-image: url(../img/pic_li-14.png);
+}
+header .head .bt-a.ico6{
+  left: .75rem;
+  background-image: url(../img/pic_li-16.png);
+  background-size: 2rem auto;
+}
+header .head .bt-a.ico7{
+  right: .75rem;
+  background-image: url(../img/pic_li-18.png);
+  background-size: 2rem auto;
+}
+header .head .bt-a.ico8{
+  right: 3.4rem;
+  background-image: url(../img/pic_li-17.png);
+  background-size: 2rem auto;
+}
+header .head .bt-a.ico8 b{
+  display: inline-block;
+  width: .7rem;
+  height: .7rem;
+  background: url(../img/pic_li-20.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: .4rem;
+  right: .4rem;
+}
+header .head .bt-a.ico9{
+  right: .5rem;
+  color: #fff;
+  font-size: .9rem;
+  line-height: 2.75rem;
+  text-align: center;
+}
+header .srch{
+  position: absolute;
+  top: .4rem;
+  bottom: .4rem;
+  right: .8rem;
+  left: 1rem;
+  background-color: #fff;
+  border-radius: .6rem;
+  overflow: hidden;
+}
+header .srch.on{
+  right: 3.5rem;
+  left: .8rem;
+}
+header .srch >a{
+  display: inline-block;
+  width: 1.18rem;
+  height: 1.18rem;
+  background: url(../img/ico_li-21.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -.59rem;
+  right: .5rem;
+}
+header .srch input{
+  border: none;
+  width: 100%;
+  height: 100%;
+  /*background: url(../img/ico_li-21.png) no-repeat .5rem 50% transparent;*/
+  background-size: 1.25rem auto;
+  font-size: 1rem;
+  color: #999999;
+}
+header .srch input.center{
+  text-align: center;
+  padding-left: 2rem;
+  background-position: 28% 50%;
+}
+
+/*----------main----------*/
+main{
+
+}
+main .mui-content{
+  padding-top: 0rem;
+  padding-bottom: 2.5rem;
+}
+
+/*----------footer----------*/
+footer{
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer .foot{
+  height: 2.5rem;
+  background-color: #fff;
+  box-shadow: -3px 0 3px #ccc;
+}
+footer .foot ul{
+
+}
+footer .foot ul li{
+  width: 20%;
+  float: left;
+}
+footer .foot ul li .i{
+  display: block;
+  padding: 5px 0;
+  position: relative;
+  height: 2.5rem;
+}
+footer .foot ul li .i p{
+  color: #808080;
+  text-align: center;
+  line-height: 1em;
+  font-size: .75rem;
+}
+footer .foot ul li .i.on p{
+  color: #f24a0f;
+}
+footer .foot ul li .i p img{
+  height: 1.09rem;
+}
+footer .foot ul li .i p img.center{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.92rem;
+  width: 3.84rem;
+  height: auto;
+}
+
+/*----------customize----------*/

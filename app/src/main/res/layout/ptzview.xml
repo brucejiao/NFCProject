@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Spinner
+        android:id="@+id/sp_speed"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btn_up"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btn_rup"
+        android:layout_alignBottom="@+id/btn_rup"
+        android:layout_toRightOf="@+id/btn_left"
+        android:text="@string/live_activity_Up"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_rup"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sp_speed"
+        android:layout_toRightOf="@+id/btn_up"
+        android:text="@string/live_activity_RUp"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_up"
+        android:layout_toRightOf="@+id/btn_left"
+        android:text="@string/live_activity_more"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_lup"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sp_speed"
+        android:text="@string/live_activity_LUp"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_rdown"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btn_down"
+        android:layout_alignLeft="@+id/btn_rup"
+        android:layout_alignTop="@+id/btn_down"
+        android:text="@string/live_activity_RDown"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_up"
+        android:layout_toRightOf="@+id/btn_up"
+        android:text="@string/live_activity_Right"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btn_more"
+        android:layout_alignBottom="@+id/btn_more"
+        android:layout_alignParentLeft="true"
+        android:text="@string/live_activity_Left"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_ldown"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btn_down"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_left"
+        android:text="@string/live_activit_LDown"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_more"
+        android:layout_toLeftOf="@+id/btn_right"
+        android:text="@string/live_activity_Down"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_z_dec"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_speed"
+        android:text="@string/live_activity_z_dec"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_z_add"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sp_speed"
+        android:layout_toLeftOf="@+id/btn_z_dec"
+        android:text="@string/live_activity_z_add"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_f_dec"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_z_dec"
+        android:text="@string/live_activity_f_dec"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_f_add"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btn_f_dec"
+        android:layout_alignLeft="@+id/btn_z_add"
+        android:text="@string/live_activity_f_add"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_a_dec"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_f_dec"
+        android:text="@string/live_activity_a_dec"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+    <Button
+        android:id="@+id/btn_a_add"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btn_a_dec"
+        android:layout_alignLeft="@+id/btn_f_add"
+        android:text="@string/live_activity_a_add"
+        android:background="@android:color/transparent"
+        android:textColor = "#ff0000ff" />
+
+</RelativeLayout>

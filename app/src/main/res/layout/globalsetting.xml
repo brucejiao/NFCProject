@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/sp_globalsetting_chn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tv_globalsetting_chn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/global_setting_activity_chn" />
+
+    <TextView
+        android:id="@+id/tv_globalsetting_pb_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sp_globalsetting_chn"
+        android:layout_marginTop="16dp"
+        android:text="@string/global_setting_activity_pb_stream" />
+
+    <Spinner
+        android:id="@+id/sp_globalsetting_pb_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_globalsetting_chn"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_globalsetting_chn" />
+
+    <Button
+        android:id="@+id/bt_globalsetting_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_globalsetting_pb_stream"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="@string/set_config" />
+
+</RelativeLayout>

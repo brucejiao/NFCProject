@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:background="#29abe2" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="安徽省粮食管理仓库"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="用户名："/>
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="小土豆"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/exit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/blue_light"
+            android:text="注销"/>
+    </LinearLayout>
+
+    <LinearLayout
+     android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="10"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <LinearLayout
+                android:id="@+id/llyt_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_out_in_warehouse"
+                    android:layout_width="137dp"
+                    android:layout_height="137dp"
+                    android:src="@mipmap/a11" />
+
+                <ImageView
+                    android:id="@+id/iv_warehouse_search"
+                    android:layout_width="137dp"
+                    android:layout_height="137dp"
+                    android:layout_marginLeft="23dp"
+                    android:src="@mipmap/a22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llyt_one"
+                android:layout_marginTop="23dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_foodstuff_state"
+                    android:layout_width="137dp"
+                    android:layout_height="137dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/a33" />
+
+                <ImageView
+                    android:id="@+id/iv_video"
+                    android:layout_width="137dp"
+                    android:layout_height="137dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="23dp"
+                    android:src="@mipmap/a44"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_scanner"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/saoma" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:background="#29abe2"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 南京绿环废物处置中心"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>-->
+</LinearLayout>
+</LinearLayout>

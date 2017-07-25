@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <RelativeLayout 
+            android:id="@+id/rl_quality_bright"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <SeekBar
+                android:id="@+id/sb_quality_bright"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/tv_quality_bright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/quality_activity_bright" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/rl_quality_contrast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <SeekBar
+                android:id="@+id/sb_quality_contrast"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/tv_quality_contrast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/quality_activity_contrast" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/rl_quality_saturation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <SeekBar
+                android:id="@+id/sb_quality_saturation"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/tv_quality_saturation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/quality_activity_saturation" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/rl_quality_huen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <SeekBar
+                android:id="@+id/sb_quality_huen"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/tv_quality_huen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/quality_activity_huen" />
+        </RelativeLayout>
+
+</LinearLayout>

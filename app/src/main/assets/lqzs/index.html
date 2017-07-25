@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/mui.css">
+    <link rel="stylesheet" type="text/css" href="css/customize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/mui.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+     //var data=[{"id":6,"housenum":"5","time":"2017-07-12","intemp":37.0,"inh":56.0,"outtemp":33.0,"outh":62.0,"maxtemp":37.1,"mintemp":7.0,"averagetemp":18.1,"examiner":"管理员","weather":"晴"},{"id":5,"housenum":"5","time":"2017-07-12","intemp":37.0,"inh":56.0,"outtemp":33.0,"outh":62.0,"maxtemp":37.1,"mintemp":7.0,"averagetemp":18.1,"examiner":"管理员","weather":"晴"}];
+    var pageNow = 1; /*offset*/
+	$(function(){
+
+    	  /*初始化*/
+    	
+    	 
+    	  $(".js-load-more").hide();
+    	 //alert(1);
+    	  //$('.ui-list-products').text("友情提示：您可以输入汽车品牌、车系、排量、刹车片型号或车架号等信息进行查询，如果输入多个条件请用空格隔开！");
+    	  /*监听加载更多*/
+    	  $(document).on('click', '.js-load-more', function(){
+    		  myjs.getMore(pageNow++);
+      	  });
+    	});
+    
+    function show3D(id){
+	   myjs.show3D(id);
+	}
+	
+    function getData(data){
+  	    	//var data = reponse;
+  	      var sum = data.length;
+  	    	
+  	      var result = '';
+  	       
+  	      /****业务逻辑块：实现拼接html内容并append到页面*********/
+
+  	      /*使用for循环模拟SQL里的limit(offset,size)*/
+		  for(var i=0; i< sum; i++){
+  	        result +='<ul><li><div class="i"><div class="txt" onclick="show3D('+data[i].id+')">'+
+                 '<div class="h012">数据：<span>MAX：<font color="red">'+data[i].maxtemp+'℃</font>&nbsp;MIN：<font color="blue">'+data[i].mintemp+'℃</font>&nbsp;AVG：<font color="GREEN">'+data[i].averagetemp+'℃</font></span></div>'+
+				'<div class="ct"><div class="lin">'+
+              	'<p>仓内环境：<span class="ca">&nbsp;&nbsp;温度：<font color="orange">'+data[i].intemp+'℃</font>&nbsp;&nbsp;&nbsp;&nbsp;湿度：<font color="violet">'+data[i].inh+'%rh</font></span></p></div><div class="lin">'+    
+               '<p>仓外环境：<span class="ca">&nbsp;&nbsp;温度：<font color="orange">'+data[i].outtemp+'℃</font>&nbsp;&nbsp;&nbsp;&nbsp;湿度：<font color="violet">'+data[i].outh+'%rh</font></span></p></div></div>'+
+				  
+				  '<div style="text-align:right; margin-top:5px;"><span style="font-size: 14px; color: #999;">'+data[i].examiner+'&nbsp;'+data[i].time+'&nbsp;'+data[i].weather+'</span></div></div>'+
+				  '<div class="clearfix"></div></div></li></ul>';
+  	      }
+  	      //startIndex = startIndex + sum; 
+  	   
+  	      if(sum ==0&&pageNow==1){
+  	    	$('.ui-list-products').text("无相关数据");
+  	      }
+  	      $('.ui-list-products').append(result);
+  	       
+  	      /*******************************************/
+  	   
+  	      /*隐藏more按钮*/
+  	      if ( sum < 5 ){
+  	        $(".js-load-more").hide();
+  	      	isEnd = true;
+  	      }else{
+  	        $(".js-load-more").show();
+  	      }
+  	}
+    
+    </script>
+    <!--plugin-->
+  </head>
+  <body>
+    <!-------------------------------------- 内容开始 -------------------------------------->
+    <main>
+      
+      <div class="mui-content">
+        <div class="ui-list-products">
+          
+        </div>
+      </div>
+    </main>
+    <!-------------------------------------- 内容结束 -------------------------------------->
+    <!--加载更多按钮-->
+    <div class="js-load-more">加载更多</div>
+    <div class="mui-off-canvas-backdrop"></div>
+  </body>
+</html>
+<style>
+  
+</style>
+<script>
+  $(function(){
+     document.onkeydown = function(event_e){
+        if(window.event) {
+        event_e = window.event;
+        }
+        var int_keycode = event_e.charCode||event_e.keyCode;
+        if( int_keycode == '13' ) {
+        //your handler function,please.
+        //getData1();
+        return false;
+        }
+     }
+  });
+</script>

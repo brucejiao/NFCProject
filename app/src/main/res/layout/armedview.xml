@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_intelbrass_armed_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/intelbrass_armed_mode" />
+
+    <Spinner
+        android:id="@+id/sp_intelbrass_armed_mode"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <Spinner
+        android:id="@+id/sp_intelbrass_armed_scene"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/sp_intelbrass_armed_mode"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_intelbrass_armed_mode" />
+
+    <TextView
+        android:id="@+id/tv_intelbrass_armed_scene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/sp_intelbrass_armed_scene"
+        android:layout_marginTop="15dp"
+        android:text="@string/intelbrass_armed_scene" />
+
+    <EditText
+        android:id="@+id/et_intelbrass_armed_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_intelbrass_armed_scene"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_intelbrass_armed_scene"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_intelbrass_armed_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_intelbrass_armed_psw"
+        android:layout_alignBottom="@+id/et_intelbrass_armed_psw"
+        android:layout_alignParentLeft="true"
+        android:text="@string/intelbrass_armed_psw" />
+
+    <Button
+        android:id="@+id/bt_intelbrass_armed_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_intelbrass_armed_psw"
+        android:layout_below="@+id/et_intelbrass_armed_psw"
+        android:layout_marginTop="35dp"
+        android:text="@string/set_config" />
+
+</RelativeLayout>
