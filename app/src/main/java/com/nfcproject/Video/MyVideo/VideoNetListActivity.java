@@ -173,11 +173,16 @@ public class VideoNetListActivity extends AppCompatActivity {
         INetSDK.SetSubconnCallBack(subDisConnect);
 
         INetSDK.SetDVRMessCallBack(new Test_CB_fMessageCallBack());
-
-        String strIp 		="111.38.247.193";
+         //2017.08.10修改前
+        /*String strIp 		="111.38.247.193";
         String strPort 		= "9110";
         String strUser 		= "huasheng";
-        String strPassword 	= "huasheng";
+        String strPassword 	= "huasheng";*/
+        //2017.08.10修改为
+        String strIp 		="60.174.105.239";
+        String strPort 		= "81";
+        String strUser 		= "shengju";
+        String strPassword 	= "shengju";
 
         int nDevPort = 9110;
         try {

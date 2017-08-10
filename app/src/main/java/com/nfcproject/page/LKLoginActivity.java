@@ -168,9 +168,15 @@ public class LKLoginActivity extends Activity implements View.OnClickListener{
                }else if(map.get("status").equals("400")){
                    Toast.makeText(getApplicationContext(),map.get("msg"),Toast.LENGTH_LONG).show();
                }else{
+                   if (progress != null) {
+                       progress.dismiss();
+                   }
                    Toast.makeText(getApplicationContext(),"登录失败",Toast.LENGTH_LONG).show();
                }
            }else{
+               if (progress != null) {
+                   progress.dismiss();
+               }
                Toast.makeText(getApplicationContext(),"登录失败",Toast.LENGTH_LONG).show();
            }
         }

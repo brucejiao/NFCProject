@@ -125,7 +125,7 @@
             android:background="@null"
             android:gravity="center"
             android:text="查询"
-            android:textSize="11sp" />
+            android:textSize="11dp" />
     </LinearLayout>
 
 
