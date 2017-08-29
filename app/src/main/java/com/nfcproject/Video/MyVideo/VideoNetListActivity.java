@@ -39,6 +39,7 @@ import com.company.NetSDK.SDK_PRODUCTION_DEFNITION;
 import com.company.NetSDK.SDK_SYS_ABILITY;
 import com.nfcproject.R;
 import com.nfcproject.utils.CommUtil;
+import com.nfcproject.utils.Contents;
 
 import java.util.ArrayList;
 
@@ -179,10 +180,10 @@ public class VideoNetListActivity extends AppCompatActivity {
         String strUser 		= "huasheng";
         String strPassword 	= "huasheng";*/
         //2017.08.10修改为
-        String strIp 		="60.174.105.239";
-        String strPort 		= "81";
-        String strUser 		= "shengju";
-        String strPassword 	= "shengju";
+        String strIp 		= getResources().getString(R.string.strIp); //"60.174.105.239";
+        String strPort 		= getResources().getString(R.string.strPort);//"81";
+        String strUser 		= getResources().getString(R.string.strUser);//"shengju";
+        String strPassword 	= getResources().getString(R.string.strPassword);//"shengju";
 
         int nDevPort = 9110;
         try {
@@ -316,12 +317,27 @@ public class VideoNetListActivity extends AppCompatActivity {
      * 获取视频列表
      */
     private void getVideoList(){
-        int nChnNum = nExtraChnNum;
+        int nChnNum = nExtraChnNum;//视频站点 1~13 有视频  14~32黑屏
 
         ArrayList<String> alChn = new ArrayList<String>();
-        for (int i = 0; i < nChnNum; i++) {
-            alChn.add(res.getString(R.string.channel_name) + (i + 1));
-        }
+//        for (int i = 0; i < nChnNum; i++) {
+//            alChn.add(res.getString(R.string.channel_name) + (i + 1));
+//        }
+
+        alChn.add(Contents.STATION_1);
+        alChn.add(Contents.STATION_2);
+        alChn.add(Contents.STATION_3);
+        alChn.add(Contents.STATION_4);
+        alChn.add(Contents.STATION_5);
+        alChn.add(Contents.STATION_6);
+        alChn.add(Contents.STATION_7);
+        alChn.add(Contents.STATION_8);
+        alChn.add(Contents.STATION_9);
+        alChn.add(Contents.STATION_10);
+        alChn.add(Contents.STATION_11);
+        alChn.add(Contents.STATION_12);
+        alChn.add(Contents.STATION_13);
+
         ArrayAdapter<String> aaChn = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, alChn);//simple_list_item_single_choice
         mVideoList.setAdapter(aaChn);
         mVideoList.setSelection(m_nGlobalChn);

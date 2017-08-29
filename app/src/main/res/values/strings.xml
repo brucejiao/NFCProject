@@ -14,9 +14,9 @@
     <!--<string name="path">http://172.106.7.88:8088</string>-->
     <!-- <string name="path">http://192.168.1.88:8080</string>-->
 
-    <!--2017.08.10 修改前： http://ctdz804.iask.in:21054/-->
-    <!--2017.08.10 修改为： http://60.174.105.239:8088/ -->
-    <string name="path">http://60.174.105.239:8088/</string>
+    <!--2017.08.10 测试地址： http://ctdz804.iask.in:21054/-->
+    <!--2017.08.10 正式地址： http://60.174.105.239:8088/ -->
+    <string name="path">http://ctdz804.iask.in:21054/</string>
 
     <string name="login">/grain/storeHouseApp/login.html</string>
     <string name="getHouseList">/grain/storeHouseApp/getStoreHouseListByEmplyNo.html</string>
@@ -34,8 +34,12 @@
     <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
     <string name="viewfinderview_status_text2">即可自动扫描</string>
 
+    <!--视频NetIP-->
+    <string name="strIp">60.174.105.239</string>
+    <string name="strPort">81</string>
+    <string name="strUser">shengju</string>
+    <string name="strPassword">shengju</string>
     <!--视频String-->
-    <!-- App name -->
     <string name="DemoInit">演示程序初始化</string>
     <string name="DemoExit">演示程序退出</string>
     <string name="SDKVersion">网络SDK版本：</string>
